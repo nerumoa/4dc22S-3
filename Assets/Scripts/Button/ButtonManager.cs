@@ -27,7 +27,7 @@ public class ButtonManager : MonoBehaviour
     bool start = false;
     bool cold = false;
     bool invi = false;
-    bool gameover = false;
+    public static bool gameover = false;
 
     void Awake()
     {

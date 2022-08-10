@@ -22,14 +22,15 @@ public class Timer : MonoBehaviour
     {
         if (TargetObject == null)
         {
-            second += Time.deltaTime;
+            if (!ButtonManager.gameover) {
+                second += Time.deltaTime;
 
-            if (second > 60f)
-            {
-                minute += 1;
-                second = 0;
+                if (second > 60f) {
+                    minute += 1;
+                    second = 0;
+                }
+                timerText.text = minute.ToString("00") + ":" + second.ToString("f2");
             }
-            timerText.text = minute.ToString("00") + ":" + second.ToString("f2");
         }
     }
 }
