@@ -8,33 +8,32 @@ public class ButtonManager : MonoBehaviour
 {
 
     [SerializeField] private GameObject TargetObject = default;
-    //[SerializeField] private GameObject scoreText = default;
+    [SerializeField] private GameObject scoreText = default;
 
     PlayerController pc;
-    //Score sc;
-    GameObject B0, B1, B2, B3, B4, B5;
+    Score sc;
+    GameObject[] B = new GameObject[6];
 
     string[] key_base = new string[] { "W", "A", "S", "D", "UpArrow", "LeftArrow", "DownArrow", "RightArrow" };
     string[] key = new string[5];
     int tmp, num = 0;
     int numMax;
+    int hp = 3;
     float timer = 0f;
     float totalTimer = 0f;
     float timerMax;
     int score;
     bool start = false;
     bool cold = false;
+    bool invi = false;
 
     void Awake()
     {
         pc = GetComponent<PlayerController>();
-        //sc = scoreText.GetComponent<Score>();
-        B0 = transform.GetChild(0).gameObject;
-        B1 = transform.GetChild(1).gameObject;
-        B2 = transform.GetChild(2).gameObject;
-        B3 = transform.GetChild(3).gameObject;
-        B4 = transform.GetChild(4).gameObject;
-        B5 = transform.GetChild(5).gameObject;
+        sc = scoreText.GetComponent<Score>();
+        for (int i = 0; i < 6; i++) {
+            B[i] = transform.GetChild(i).gameObject;
+        }
     }
 
     private void Update()
@@ -50,7 +49,6 @@ public class ButtonManager : MonoBehaviour
                 timer += Time.deltaTime;
             }
             totalTimer += Time.deltaTime;
-
             if (timer >= timerMax) {
                 Gameover();
             }
@@ -64,7 +62,7 @@ public class ButtonManager : MonoBehaviour
                     Next();
                 }
             } else if (Array.IndexOf(key_base, pc.GetPressKey()) >= 0) {
-                Debug.Log("miss");
+                Damage();
             }
         }
     }
@@ -78,9 +76,9 @@ public class ButtonManager : MonoBehaviour
         score = 200;
         SetKey();
 
-        B0.gameObject.SetActive(true);
-        B1.gameObject.SetActive(true);
-        B5.gameObject.SetActive(true);
+        B[0].gameObject.SetActive(true);
+        B[1].gameObject.SetActive(true);
+        B[5].gameObject.SetActive(true);
     }
 
     private void SetKey()
@@ -91,6 +89,22 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
+    private void Damage()
+    {
+        if (!invi) {
+            hp--;
+            StartCoroutine("Invincible");
+        }
+
+    }
+
+    IEnumerator Invincible()
+    {
+        invi = true;
+        yield return new WaitForSeconds(0.5f);
+        invi = false;
+    }
+
     private void Gameover()
     {
         SceneManager.LoadScene("GameClearScene");
@@ -99,7 +113,7 @@ public class ButtonManager : MonoBehaviour
     private void Next()
     {
         cold = true;
-        //sc.AddScore(score);
+        sc.AddScore(score);
         StartCoroutine("NextKey");
     }
 
@@ -165,28 +179,28 @@ public class ButtonManager : MonoBehaviour
     private void Third()
     {
         numMax = 3;
-        B0.transform.position = new Vector2(-2f, -4.2f);
-        B1.transform.position = new Vector2(0f, -4.2f);
-        B2.SetActive(true);
+        B[0].transform.position = new Vector2(-2f, -4.2f);
+        B[1].transform.position = new Vector2(0f, -4.2f);
+        B[2].SetActive(true);
     }
 
     private void Fourth()
     {
         numMax = 4;
-        B0.transform.position = new Vector2(-3f, -4.2f);
-        B1.transform.position = new Vector2(-1f, -4.2f);
-        B2.transform.position = new Vector2(1f, -4.2f);
-        B3.SetActive(true);
+        B[0].transform.position = new Vector2(-3f, -4.2f);
+        B[1].transform.position = new Vector2(-1f, -4.2f);
+        B[2].transform.position = new Vector2(1f, -4.2f);
+        B[3].SetActive(true);
     }
 
     private void Fifth()
     {
         numMax = 5;
-        B0.transform.position = new Vector2(-4f, -4.2f);
-        B1.transform.position = new Vector2(-2f, -4.2f);
-        B2.transform.position = new Vector2(0f, -4.2f);
-        B3.transform.position = new Vector2(2f, -4.2f);
-        B4.SetActive(true);
+        B[0].transform.position = new Vector2(-4f, -4.2f);
+        B[1].transform.position = new Vector2(-2f, -4.2f);
+        B[2].transform.position = new Vector2(0f, -4.2f);
+        B[3].transform.position = new Vector2(2f, -4.2f);
+        B[4].SetActive(true);
     }
 
     public string GetReqKey(int num)
@@ -206,6 +220,11 @@ public class ButtonManager : MonoBehaviour
         } else {
             return false;
         }
+    }
+
+    public int GetHP()
+    {
+        return hp;
     }
 
     public float GetTimer()
