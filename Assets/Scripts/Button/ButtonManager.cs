@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
-
     [SerializeField] private GameObject TargetObject = default;
     [SerializeField] private GameObject scoreText = default;
     [SerializeField] private GameObject gameoverText = default;
