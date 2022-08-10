@@ -9,7 +9,6 @@ public class SliderManager : MonoBehaviour
     GameObject button;
     ButtonManager bm;
 
-    // Start is called before the first frame update
     void Awake()
     {
         button = transform.root.gameObject;
@@ -17,7 +16,6 @@ public class SliderManager : MonoBehaviour
         bm = button.GetComponent<ButtonManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         slider.maxValue = bm.GetTimerMax();
