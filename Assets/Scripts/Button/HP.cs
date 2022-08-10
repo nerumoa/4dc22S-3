@@ -16,13 +16,15 @@ public class HP : MonoBehaviour
 
     private void Awake()
     {
-        button = transform.parent.gameObject;
+        button = transform.root.gameObject;
         bm = button.GetComponent<ButtonManager>();
         sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
+        //Debug.Log("aaaa");
+
         if (hp != bm.GetHP()) {
             flash();
         }
@@ -31,12 +33,15 @@ public class HP : MonoBehaviour
         time %= 1.0f;
     }
 
-    private void flash()
+    IEnumerator flash()
     {
-        if (disapHP == bm.GetHP()) {
-            var color = sr.color;
-            color.a = time >= cycle * 0.5f ? 1 : 0;
-            sr.color = color;
+        for (int i = 0; i < 50; i++) {
+            if (disapHP == bm.GetHP()) {
+                var color = sr.color;
+                color.a = time >= cycle * 0.5f ? 1 : 0;
+                sr.color = color;
+            }
+            yield return new WaitForSeconds(0.01f);
         }
         hp = bm.GetHP();
     }
