@@ -18,6 +18,11 @@ public class Score : MonoBehaviour
         naichilab.RankingLoader.Instance.SendScoreAndShowRanking(score);
     }
 
+    public void ResetScore()
+    {
+        score = 0;
+    }
+
     void Update()
     {
         scoreText.SetText("SCORE: {0}", score);
