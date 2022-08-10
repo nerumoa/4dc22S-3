@@ -73,7 +73,7 @@ public class ButtonManager : MonoBehaviour
                     Next();
                 }
             } else if (Array.IndexOf(a, pc.GetPressKey()) >= 0) {
-                Next();
+                Debug.Log("miss");
             }
         }
 
