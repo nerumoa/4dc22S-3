@@ -113,24 +113,63 @@ public class ButtonManager : MonoBehaviour
         } else if (totalTimer >= 80f) {
             timerMax = 4.0f;
         } else if (totalTimer >= 60f) {
-            numMax = 5;
+            Fifth();
             timerMax = 5.0f;
-            transform.GetChild(4).gameObject.SetActive(true);
         } else if (totalTimer >= 50f) {
             timerMax = 6.0f;
         } else if (totalTimer >= 40f) {
-            numMax = 4;
+            Fourth();
             timerMax = 7.0f;
-            transform.GetChild(3).gameObject.SetActive(true);
         } else if (totalTimer >= 30f){
             timerMax = 8.0f;
         } else if (totalTimer >= 20f) {
-            numMax = 3;
+            Third();
             timerMax = 9.0f;
-            transform.GetChild(2).gameObject.SetActive(true);
         }
 
         SetKey();
+    }
+
+    private void Third()
+    {
+        GameObject B0 = transform.GetChild(0).gameObject;
+        GameObject B1 = transform.GetChild(1).gameObject;
+        GameObject B2 = transform.GetChild(2).gameObject;
+
+        numMax = 3;
+        B0.transform.position = new Vector2(-2f, -4.2f);
+        B1.transform.position = new Vector2(0f, -4.2f);
+        B2.SetActive(true);
+    }
+
+    private void Fourth()
+    {
+        GameObject B0 = transform.GetChild(0).gameObject;
+        GameObject B1 = transform.GetChild(1).gameObject;
+        GameObject B2 = transform.GetChild(2).gameObject;
+        GameObject B3 = transform.GetChild(3).gameObject;
+
+        numMax = 4;
+        B0.transform.position = new Vector2(-3f, -4.2f);
+        B1.transform.position = new Vector2(-1f, -4.2f);
+        B2.transform.position = new Vector2(1f, -4.2f);
+        B3.SetActive(true);
+    }
+
+    private void Fifth()
+    {
+        GameObject B0 = transform.GetChild(0).gameObject;
+        GameObject B1 = transform.GetChild(1).gameObject;
+        GameObject B2 = transform.GetChild(2).gameObject;
+        GameObject B3 = transform.GetChild(3).gameObject;
+        GameObject B4 = transform.GetChild(4).gameObject;
+
+        numMax = 5;
+        B0.transform.position = new Vector2(-4f, -4.2f);
+        B1.transform.position = new Vector2(-2f, -4.2f);
+        B2.transform.position = new Vector2(0f, -4.2f);
+        B3.transform.position = new Vector2(2f, -4.2f);
+        B4.SetActive(true);
     }
 
     public string GetReqKey(int num)
