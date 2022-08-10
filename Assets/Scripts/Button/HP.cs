@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class HP : MonoBehaviour
 {
-    [SerializeField] GameObject HP3 = default;
-    [SerializeField] GameObject HP2 = default;
-    [SerializeField] GameObject HP1 = default;
+    [SerializeField] int disapHP = default;     // Á–Å‚·‚éHP
 
     GameObject button;
     ButtonManager bm;
@@ -14,7 +12,7 @@ public class HP : MonoBehaviour
 
     float time;
     float cycle = 1f;
-    int hp;
+    int hp = 3;
 
     private void Awake()
     {
@@ -25,28 +23,21 @@ public class HP : MonoBehaviour
 
     void Update()
     {
-        int hp = bm.GetHP();
-        if (hp == 2) {
-            if (gameObject.name == "HP3") {
-                //Destroy();
-            }
-        } else if (hp == 1) {
-            if (gameObject.name == "HP2") {
-                //Destroy();
-            }
-        } else if (hp == 0) {
-            if (gameObject.name == "HP1") {
-                //Destroy();
-            }
+        if (hp != bm.GetHP()) {
+            flash();
         }
 
-        /*
         time += Time.deltaTime;
         time %= 1.0f;
-        var color = _target.color;
-        color.a = time >= cycle * 0.5f ? 1 : 0;
-        _target.color = color;
-        */
+    }
 
+    private void flash()
+    {
+        if (disapHP == bm.GetHP()) {
+            var color = sr.color;
+            color.a = time >= cycle * 0.5f ? 1 : 0;
+            sr.color = color;
+        }
+        hp = bm.GetHP();
     }
 }

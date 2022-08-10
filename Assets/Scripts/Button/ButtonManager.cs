@@ -31,6 +31,7 @@ public class ButtonManager : MonoBehaviour
     {
         pc = GetComponent<PlayerController>();
         sc = scoreText.GetComponent<Score>();
+        sc.ResetScore();
         for (int i = 0; i < 6; i++) {
             B[i] = transform.GetChild(i).gameObject;
         }
