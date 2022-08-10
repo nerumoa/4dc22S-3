@@ -13,6 +13,11 @@ public class Score : MonoBehaviour
         score += i;
     }
 
+    public void ShowScore()
+    {
+        naichilab.RankingLoader.Instance.SendScoreAndShowRanking(score);
+    }
+
     void Update()
     {
         scoreText.SetText("SCORE: {0}", score);
