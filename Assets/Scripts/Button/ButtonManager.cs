@@ -80,6 +80,7 @@ public class ButtonManager : MonoBehaviour
     private void Init()
     {
         start = true;
+        gameover = false;
         numMax = 2;
         timer = 0f;
         timerMax = 10f;
@@ -238,6 +239,12 @@ public class ButtonManager : MonoBehaviour
     {
         return hp;
     }
+
+    public int GetScore()
+    {
+        return score;
+    }
+
 
     public float GetTimer()
     {

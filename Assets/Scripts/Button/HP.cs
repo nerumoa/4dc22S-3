@@ -23,7 +23,6 @@ public class HP : MonoBehaviour
     void Update()
     {
         if (hp != bm.GetHP()) {
-            Debug.Log(bm.GetHP());
             hp = bm.GetHP();
             StartCoroutine("flash");
         }
