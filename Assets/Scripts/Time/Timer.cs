@@ -5,6 +5,8 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    [SerializeField] private GameObject TargetObject;
+
     private TextMeshProUGUI timerText;
     private float second;
     private int minute;
@@ -18,13 +20,16 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        second += Time.deltaTime;
-
-        if (second > 60f)
+        if (TargetObject == null)
         {
-            minute += 1;
-            second = 0;
+            second += Time.deltaTime;
+
+            if (second > 60f)
+            {
+                minute += 1;
+                second = 0;
+            }
+            timerText.text = minute.ToString("00") + ":" + second.ToString("f2");
         }
-        timerText.text = minute.ToString("00") + ":" + second.ToString("f2");
     }
 }
