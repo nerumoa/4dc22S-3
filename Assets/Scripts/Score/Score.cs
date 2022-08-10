@@ -8,9 +8,9 @@ public class Score : MonoBehaviour
     int score = 0;
     public TextMeshProUGUI scoreText;
 
-    public void AddScore()
+    public void AddScore(int i)
     {
-        score++;
+        score += i;
     }
 
     void Update()
