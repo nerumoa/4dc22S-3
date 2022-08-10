@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ShowAchievement : MonoBehaviour
@@ -9,6 +10,16 @@ public class ShowAchievement : MonoBehaviour
     [SerializeField] GameObject text = default;
     [SerializeField] GameObject text2 = default;
 
+    ShowTextAchievement sta;
+    TextMeshProUGUI tmp;
+
+    private void Awake()
+    {
+        sta = GetComponent<ShowTextAchievement>();
+        tmp = text2.GetComponent<TextMeshProUGUI>();
+    }
+
+    /*
     int score;
 
     void Start()
@@ -21,16 +32,19 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetInt("SCORE", score);
         PlayerPrefs.Save();
     }
+    */
 
     void Update()
     {
         if (Input.GetKeyDown("p")) {
             StartCoroutine("ShowAchieve");
         }
+    }
 
-        if (Input.GetKeyDown("o")) {
-            Debug.Log(score);
-        }
+    public void Achievement1()
+    {
+        tmp.text = sta.GetText1();
+        StartCoroutine("ShowAchieve");
     }
 
     IEnumerator ShowAchieve()

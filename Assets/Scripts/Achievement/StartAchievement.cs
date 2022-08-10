@@ -26,4 +26,9 @@ public class StartAchievement : MonoBehaviour
     {
         Debug.Log("Start:" + startCount);
     }
+
+    public int GetStartCount()
+    {
+        return startCount;
+    }
 }

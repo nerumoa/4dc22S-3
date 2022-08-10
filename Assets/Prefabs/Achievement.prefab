@@ -336,6 +336,8 @@ GameObject:
   - component: {fileID: 5183905511567113654}
   - component: {fileID: 5183905511567113648}
   - component: {fileID: 8895117069034650757}
+  - component: {fileID: 4451571886853933323}
+  - component: {fileID: 7355231502641134667}
   m_Layer: 0
   m_Name: Achievement
   m_TagString: GameController
@@ -399,6 +401,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17938f98bb758434d97a8e4402e047cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4451571886853933323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183905511567113655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df88fb238a6ef74f928dd312464d9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7355231502641134667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183905511567113655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd84382b77c5bf4ab307e6aa1b55e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5183905511673470700
