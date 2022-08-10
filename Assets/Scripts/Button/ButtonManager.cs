@@ -61,7 +61,7 @@ public class ButtonManager : MonoBehaviour
             Gameover();
         }
 
-        if (key[num] != null && start) {
+        if (key[num] != null && start && !cold) {
             if (pc.GetPressKey() == key[num]) {
                 if (num < numMax - 1) {
                     num++;
