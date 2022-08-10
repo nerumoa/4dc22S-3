@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HP : MonoBehaviour
 {
@@ -10,8 +11,6 @@ public class HP : MonoBehaviour
     ButtonManager bm;
     SpriteRenderer sr;
 
-    float time;
-    float cycle = 1f;
     int hp = 3;
 
     private void Awake()
@@ -23,26 +22,21 @@ public class HP : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log("aaaa");
-
         if (hp != bm.GetHP()) {
-            flash();
+            Debug.Log(bm.GetHP());
+            hp = bm.GetHP();
+            StartCoroutine("flash");
         }
-
-        time += Time.deltaTime;
-        time %= 1.0f;
     }
 
     IEnumerator flash()
     {
-        for (int i = 0; i < 50; i++) {
-            if (disapHP == bm.GetHP()) {
-                var color = sr.color;
-                color.a = time >= cycle * 0.5f ? 1 : 0;
-                sr.color = color;
+        if (hp == disapHP) {
+            for (int i = 0; i < 10; i++) {
+                sr.enabled = !sr.enabled;
+                yield return new WaitForSeconds(0.1f);
             }
-            yield return new WaitForSeconds(0.01f);
+            Destroy(gameObject);
         }
-        hp = bm.GetHP();
     }
 }

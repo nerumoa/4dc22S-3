@@ -9,6 +9,7 @@ public class ButtonManager : MonoBehaviour
 
     [SerializeField] private GameObject TargetObject = default;
     [SerializeField] private GameObject scoreText = default;
+    [SerializeField] private GameObject gameoverText = default;
 
     PlayerController pc;
     Score sc;
@@ -26,6 +27,7 @@ public class ButtonManager : MonoBehaviour
     bool start = false;
     bool cold = false;
     bool invi = false;
+    bool gameover = false;
 
     void Awake()
     {
@@ -55,6 +57,10 @@ public class ButtonManager : MonoBehaviour
             }
         }
 
+        if (hp <= 0) {
+            Gameover();
+        }
+
         if (key[num] != null && start) {
             if (pc.GetPressKey() == key[num]) {
                 if (num < numMax - 1) {
@@ -65,6 +71,10 @@ public class ButtonManager : MonoBehaviour
             } else if (Array.IndexOf(key_base, pc.GetPressKey()) >= 0) {
                 Damage();
             }
+        }
+
+        if (gameover && pc.GetAnyKey()) {
+            SceneManager.LoadScene("GameClearScene");
         }
     }
 
@@ -102,13 +112,15 @@ public class ButtonManager : MonoBehaviour
     IEnumerator Invincible()
     {
         invi = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.0f);
         invi = false;
     }
 
     private void Gameover()
     {
-        SceneManager.LoadScene("GameClearScene");
+        cold = true;
+        gameover = true;
+        gameoverText.SetActive(true);
     }
 
     private void Next()

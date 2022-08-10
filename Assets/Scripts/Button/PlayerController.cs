@@ -16,4 +16,13 @@ public class PlayerController : MonoBehaviour
         }
         return "";
     }
+
+    public bool GetAnyKey()
+    {
+        if (Input.anyKeyDown) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
