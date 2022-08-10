@@ -50,5 +50,11 @@ public class ButtonSprite : MonoBehaviour
                 sp.sprite = square;
             }
         }
+
+        if (bm.EqualNum(num)) {
+            transform.localScale = new Vector2(1.5f, 1.5f);
+        } else {
+            transform.localScale = new Vector2(1f, 1f);
+        }
     }
 }
