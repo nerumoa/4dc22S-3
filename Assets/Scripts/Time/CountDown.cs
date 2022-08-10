@@ -12,7 +12,6 @@ public class CountDown : MonoBehaviour
     public AudioClip CountDownSound;
     int seconds;
 
-    bool soundflag = true;
 
     // Start is called before the first frame update
     void Start()
