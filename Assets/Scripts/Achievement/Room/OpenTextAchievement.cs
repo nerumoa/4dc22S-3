@@ -4,122 +4,122 @@ using UnityEngine;
 
 public class OpenTextAchievement : MonoBehaviour
 {
-    public string GetTitleText1()
+    public string GetOpenText1()
     {
         return "餅を搗きし者";
     }
 
-    public string GetTitleText2()
+    public string GetOpenText2()
     {
         return "お餅大好き";
     }
 
-    public string GetTitleText3()
+    public string GetOpenText3()
     {
         return "ウルトラ餅ニスト";
     }
 
-    public string GetTitleText4()
+    public string GetOpenText4()
     {
         return "Welcome Hell";
     }
 
-    public string GetTitleText5()
+    public string GetOpenText5()
     {
         return "餅搗きに失敗は搗きもの";
     }
 
-    public string GetTitleText6()
+    public string GetOpenText6()
     {
         return "あきらめるな、まだ搗ける";
     }
 
-    public string GetTitleText7()
+    public string GetOpenText7()
     {
         return "ゲームプレイ、感謝します";
     }
 
-    public string GetTitleText8()
+    public string GetOpenText8()
     {
         return "お疲れ様です";
     }
 
-    public string GetTitleText9()
+    public string GetOpenText9()
     {
         return "まだやるの？";
     }
 
-    public string GetTitleText10()
+    public string GetOpenText10()
     {
         return "すばらしい！";
     }
 
-    public string GetTitleText11()
+    public string GetOpenText11()
     {
         return "とてもすばらしい！";
     }
 
-    public string GetTitleText12()
+    public string GetOpenText12()
     {
         return "すばらしい・オブザイヤー";
     }
 
-    public string GetTitleText13()
+    public string GetOpenText13()
     {
         return "よくやった！";
     }
 
-    public string GetTitleText14()
+    public string GetOpenText14()
     {
         return "餅も積もれば山となる";
     }
 
-    public string GetTitleText15()
+    public string GetOpenText15()
     {
         return "千里の餅も、ひと足宛はこぶなり";
     }
 
-    public string GetTitleText16()
+    public string GetOpenText16()
     {
         return "おかえり";
     }
 
-    public string GetTitleText17()
+    public string GetOpenText17()
     {
         return "待ってた";
     }
 
-    public string GetTitleText18()
+    public string GetOpenText18()
     {
         return "今日も一日";
     }
 
-    public string GetTitleText19()
+    public string GetOpenText19()
     {
         return "ラッキーマン";
     }
 
-    public string GetTitleText20()
+    public string GetOpenText20()
     {
         return "重課金者";
     }
 
-    public string GetTitleText21()
+    public string GetOpenText21()
     {
         return "出席確認";
     }
 
-    public string GetTitleText22()
+    public string GetOpenText22()
     {
         return "兎の耳に神曲";
     }
 
-    public string GetTitleText23()
+    public string GetOpenText23()
     {
         return "虚無";
     }
 
-    public string GetTitleText24()
+    public string GetOpenText24()
     {
         return "ガンジー";
     }

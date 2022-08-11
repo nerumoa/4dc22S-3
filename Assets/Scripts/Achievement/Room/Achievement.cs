@@ -11,6 +11,7 @@ public class Achievement : MonoBehaviour
     GameObject title;
     NotOpenAchievement noa;
     TitleTextAchievement tta;
+    OpenTextAchievement ota;
     string[] achi = new string[25];
 
     void Awake()
@@ -18,6 +19,7 @@ public class Achievement : MonoBehaviour
         achiText = text.GetComponent<TextMeshProUGUI>();
         noa = GetComponent<NotOpenAchievement>();
         tta = GetComponent<TitleTextAchievement>();
+        ota = GetComponent<OpenTextAchievement>();
         titleText = transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
         title = titleText.gameObject;
     }
@@ -133,7 +135,7 @@ public class Achievement : MonoBehaviour
         if (achi[1] != "FINISH") {
             achiText.text = noa.GetNotOpen1();
         } else {
-            achiText.text = "餅を10000回搗くと取得。\n餅つきマスターの証。";
+            achiText.text = ota.GetOpenText1();
         }
     }
 
@@ -142,7 +144,7 @@ public class Achievement : MonoBehaviour
         if (achi[2] != "FINISH") {
             achiText.text = noa.GetNotOpen2();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText2();
         }
     }
 
@@ -151,7 +153,7 @@ public class Achievement : MonoBehaviour
         if (achi[3] != "FINISH") {
             achiText.text = noa.GetNotOpen3();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText3();
         }
     }
 
@@ -160,7 +162,7 @@ public class Achievement : MonoBehaviour
         if (achi[4] != "FINISH") {
             achiText.text = noa.GetNotOpen4();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText4(); ;
         }
     }
 
@@ -169,7 +171,7 @@ public class Achievement : MonoBehaviour
         if (achi[5] != "FINISH") {
             achiText.text = noa.GetNotOpen5();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText5();
         }
     }
 
@@ -178,7 +180,7 @@ public class Achievement : MonoBehaviour
         if (achi[6] != "FINISH") {
             achiText.text = noa.GetNotOpen6();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText6();
         }
     }
 
@@ -187,7 +189,7 @@ public class Achievement : MonoBehaviour
         if (achi[7] != "FINISH") {
             achiText.text = noa.GetNotOpen7();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText7();
         }
     }
 
@@ -196,7 +198,7 @@ public class Achievement : MonoBehaviour
         if (achi[8] != "FINISH") {
             achiText.text = noa.GetNotOpen8();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText8();
         }
     }
 
@@ -205,7 +207,7 @@ public class Achievement : MonoBehaviour
         if (achi[9] != "FINISH") {
             achiText.text = noa.GetNotOpen9();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText9();
         }
     }
 
@@ -214,7 +216,7 @@ public class Achievement : MonoBehaviour
         if (achi[10] != "FINISH") {
             achiText.text = noa.GetNotOpen10();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText10();
         }
     }
 
@@ -223,7 +225,7 @@ public class Achievement : MonoBehaviour
         if (achi[11] != "FINISH") {
             achiText.text = noa.GetNotOpen11();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText11();
         }
     }
 
@@ -232,7 +234,7 @@ public class Achievement : MonoBehaviour
         if (achi[12] != "FINISH") {
             achiText.text = noa.GetNotOpen12();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText12();
         }
     }
 
@@ -241,7 +243,7 @@ public class Achievement : MonoBehaviour
         if (achi[13] != "FINISH") {
             achiText.text = noa.GetNotOpen13();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText13();
         }
     }
 
@@ -250,7 +252,7 @@ public class Achievement : MonoBehaviour
         if (achi[14] != "FINISH") {
             achiText.text = noa.GetNotOpen14();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText14();
         }
     }
 
@@ -259,7 +261,7 @@ public class Achievement : MonoBehaviour
         if (achi[15] != "FINISH") {
             achiText.text = noa.GetNotOpen15();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText15();
         }
     }
 
@@ -268,7 +270,7 @@ public class Achievement : MonoBehaviour
         if (achi[16] != "FINISH") {
             achiText.text = noa.GetNotOpen16();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText16();
         }
     }
 
@@ -277,7 +279,7 @@ public class Achievement : MonoBehaviour
         if (achi[17] != "FINISH") {
             achiText.text = noa.GetNotOpen17();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText17();
         }
     }
 
@@ -286,7 +288,7 @@ public class Achievement : MonoBehaviour
         if (achi[18] != "FINISH") {
             achiText.text = noa.GetNotOpen18();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText18();
         }
     }
 
@@ -295,7 +297,7 @@ public class Achievement : MonoBehaviour
         if (achi[19] != "FINISH") {
             achiText.text = noa.GetNotOpen19();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText19();
         }
     }
 
@@ -304,7 +306,7 @@ public class Achievement : MonoBehaviour
         if (achi[20] != "FINISH") {
             achiText.text = noa.GetNotOpen20();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText20();
         }
     }
 
@@ -313,7 +315,7 @@ public class Achievement : MonoBehaviour
         if (achi[21] != "FINISH") {
             achiText.text = noa.GetNotOpen21();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText21();
         }
     }
 
@@ -322,7 +324,7 @@ public class Achievement : MonoBehaviour
         if (achi[22] != "FINISH") {
             achiText.text = noa.GetNotOpen22();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText22();
         }
     }
 
@@ -331,7 +333,7 @@ public class Achievement : MonoBehaviour
         if (achi[23] != "FINISH") {
             achiText.text = noa.GetNotOpen23();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText23();
         }
     }
 
@@ -340,7 +342,7 @@ public class Achievement : MonoBehaviour
         if (achi[24] != "FINISH") {
             achiText.text = noa.GetNotOpen24();
         } else {
-            achiText.text = "";
+            achiText.text = ota.GetOpenText24();
         }
     }
 }
