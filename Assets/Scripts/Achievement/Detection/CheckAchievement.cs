@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class CheckAchievement : MonoBehaviour
 {
-    int startCount, gameoverCount, maxScore, allScore, successCount;
+    int startCount, gameoverCount, maxScore, allScore, successCount, damageCount, _void, gandhi;
     string achi1, achi2, achi3, achi4, achi5, achi6, achi7, achi8, achi9, achi10;
-    string achi11, achi12, achi13, achi14, achi15, achi16, achi17, achi18, achi19;
+    string achi11, achi12, achi13, achi14, achi15, achi16, achi17, achi18, achi19, achi20;
+    string achi21, achi22, achi23, achi24;
 
     void Awake()
     {
@@ -29,6 +30,18 @@ public class CheckAchievement : MonoBehaviour
         achi13 = PlayerPrefs.GetString("ACHI13", "FALSE");
         achi14 = PlayerPrefs.GetString("ACHI14", "FALSE");
         achi15 = PlayerPrefs.GetString("ACHI15", "FALSE");
+
+        achi16 = PlayerPrefs.GetString("ACHI16", "FALSE");
+        achi17 = PlayerPrefs.GetString("ACHI17", "FALSE");
+        achi18 = PlayerPrefs.GetString("ACHI18", "FALSE");
+
+        achi19 = PlayerPrefs.GetString("ACHI19", "FALSE");
+        achi20 = PlayerPrefs.GetString("ACHI20", "FALSE");
+
+        achi21 = PlayerPrefs.GetString("ACHI21", "FALSE");
+        achi22 = PlayerPrefs.GetString("ACHI22", "FALSE");
+        achi23 = PlayerPrefs.GetString("ACHI23", "FALSE");
+        achi24 = PlayerPrefs.GetString("ACHI24", "FALSE");
     }
 
     private void OnDestroy()
@@ -43,6 +56,9 @@ public class CheckAchievement : MonoBehaviour
         maxScore = PlayerPrefs.GetInt("MAXSCORE", 0);
         allScore = PlayerPrefs.GetInt("ALLSCORE", 0);
         successCount = PlayerPrefs.GetInt("SUCCESS", 0);
+        damageCount = PlayerPrefs.GetInt("DAMAGE", 0);
+        _void = PlayerPrefs.GetInt("VOID", 0);
+        gandhi = PlayerPrefs.GetInt("GANDHI", 0);
 
         if (startCount >= 2 && achi1 == "FALSE") {
             PlayerPrefs.SetString("ACHI1", "TRUE");
@@ -93,6 +109,36 @@ public class CheckAchievement : MonoBehaviour
         } else if (successCount >= 1000 && achi15 == "FALSE") {
             PlayerPrefs.SetString("ACHI15", "TRUE");
             achi15 = PlayerPrefs.GetString("ACHI15");
+
+        } else if (damageCount >= 5 && achi16 == "FALSE") {
+            PlayerPrefs.SetString("ACHI16", "TRUE");
+            achi16 = PlayerPrefs.GetString("ACHI16");
+        } else if (damageCount >= 50 && achi17 == "FALSE") {
+            PlayerPrefs.SetString("ACHI17", "TRUE");
+            achi17 = PlayerPrefs.GetString("ACHI17");
+        } else if (damageCount >= 100 && achi18 == "FALSE") {
+            PlayerPrefs.SetString("ACHI18", "TRUE");
+            achi18 = PlayerPrefs.GetString("ACHI18");
+
+        } else if (damageCount >= 50000 && achi19 == "FALSE") {
+            PlayerPrefs.SetString("ACHI19", "TRUE");
+            achi19 = PlayerPrefs.GetString("ACHI19");
+        } else if (damageCount >= 500000 && achi20 == "FALSE") {
+            PlayerPrefs.SetString("ACHI20", "TRUE");
+            achi20 = PlayerPrefs.GetString("ACHI20");
+
+        } else if (damageCount >= 500000 && achi21 == "FALSE") {
+            PlayerPrefs.SetString("ACHI21", "TRUE");
+            achi21 = PlayerPrefs.GetString("ACHI21");
+        } else if (damageCount >= 500000 && achi22 == "FALSE") {
+            PlayerPrefs.SetString("ACHI22", "TRUE");
+            achi22 = PlayerPrefs.GetString("ACHI22");
+        } else if (_void == 1 && achi23 == "FALSE") {
+            PlayerPrefs.SetString("ACHI23", "TRUE");
+            achi23 = PlayerPrefs.GetString("ACHI23");
+        } else if (gandhi == 1 && achi24 == "FALSE") {
+            PlayerPrefs.SetString("ACHI24", "TRUE");
+            achi24 = PlayerPrefs.GetString("ACHI24");
         }
     }
 }

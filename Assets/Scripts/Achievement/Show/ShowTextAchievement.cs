@@ -21,17 +21,17 @@ public class ShowTextAchievement : MonoBehaviour
 
     public string GetText4()
     {
-        return "Welcome Hell";
+        return "ゲームプレイ、\n感謝します";
     }
 
     public string GetText5()
     {
-        return "餅つきに\n失敗はつきもの";
+        return "お疲れ様です";
     }
 
     public string GetText6()
     {
-        return "あきらめるな、\nまだ搗ける";
+        return "まだやるの？";
     }
 
     public string GetText7()
@@ -66,7 +66,7 @@ public class ShowTextAchievement : MonoBehaviour
 
     public string GetText13()
     {
-        return "餅をつきし者";
+        return "餅を搗きし者";
     }
 
     public string GetText14()
@@ -77,5 +77,50 @@ public class ShowTextAchievement : MonoBehaviour
     public string GetText15()
     {
         return "ウルトラ餅ニスト";
+    }
+
+    public string GetText16()
+    {
+        return "Welcome Hell";
+    }
+
+    public string GetText17()
+    {
+        return "餅搗きに\n失敗は搗きもの";
+    }
+
+    public string GetText18()
+    {
+        return "あきらめるな、\nまだ搗ける";
+    }
+
+    public string GetText19()
+    {
+        return "ラッキーマン";
+    }
+
+    public string GetText20()
+    {
+        return "重課金者";
+    }
+
+    public string GetText21()
+    {
+        return "出席確認";
+    }
+
+    public string GetText22()
+    {
+        return "兎の耳に神曲";
+    }
+
+    public string GetText23()
+    {
+        return "虚無";
+    }
+
+    public string GetText24()
+    {
+        return "ガンジー";
     }
 }

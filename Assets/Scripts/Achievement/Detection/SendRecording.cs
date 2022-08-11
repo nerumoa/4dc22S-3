@@ -7,12 +7,18 @@ public class SendRecording : MonoBehaviour
     GameoverAchievement ga;
     ScoreAchievement sa;
     SuccessAchievement sua;
+    DamageAchievement da;
+    VoidAchievement va;
+    GandhiAchievement gaa;
 
     private void Awake()
     {
         ga = GetComponent<GameoverAchievement>();
         sa = GetComponent<ScoreAchievement>();
         sua = GetComponent<SuccessAchievement>();
+        da = GetComponent<DamageAchievement>();
+        va = GetComponent<VoidAchievement>();
+        gaa = GetComponent<GandhiAchievement>();
     }
 
     public void SendGameoverRecord()
@@ -31,4 +37,18 @@ public class SendRecording : MonoBehaviour
         sua.AddSuccessCount();
     }
 
+    public void SendDamageRecord()
+    {
+        da.AddDamageCount();
+    }
+
+    public void SendVoidRecord()
+    {
+        va.SetVoid();
+    }
+
+    public void SendGandhiRecord()
+    {
+        gaa.SetGandhi();
+    }
 }

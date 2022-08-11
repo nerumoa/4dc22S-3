@@ -28,6 +28,7 @@ public class ButtonManager : MonoBehaviour
     bool start = false;
     bool cold = false;
     bool invi = false;
+    bool gandhi = false;
     public static bool gameover = false;
 
     void Awake()
@@ -107,6 +108,7 @@ public class ButtonManager : MonoBehaviour
     {
         if (!invi) {
             hp--;
+            sr.SendDamageRecord();
             StartCoroutine("Invincible");
         }
 
@@ -121,14 +123,21 @@ public class ButtonManager : MonoBehaviour
 
     private void Gameover()
     {
-        cold = true;
-        gameover = true;
-        gameoverText.SetActive(true);
+        if (!gameover) {
+            cold = true;
+            gameover = true;
+            sr.SendGameoverRecord();
+            if (!gandhi) {
+                sr.SendGandhiRecord();
+            }
+            gameoverText.SetActive(true);
+        }
     }
 
     private void Next()
     {
         cold = true;
+        gandhi = true;
         sc.AddScore(addScore);
         score = sc.GetScore();
         sr.SendSuccessRecord();

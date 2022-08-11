@@ -17,7 +17,8 @@ public class ShowAchievement : MonoBehaviour
 
     bool cold = false;
     string achi1, achi2, achi3, achi4, achi5, achi6, achi7, achi8, achi9, achi10;
-    string achi11, achi12, achi13, achi14, achi15, achi16, achi17, achi18, achi19;
+    string achi11, achi12, achi13, achi14, achi15, achi16, achi17, achi18, achi19, achi20;
+    string achi21, achi22, achi23, achi24;
 
     private void Awake()
     {
@@ -48,6 +49,18 @@ public class ShowAchievement : MonoBehaviour
         achi13 = PlayerPrefs.GetString("ACHI13", "FALSE");
         achi14 = PlayerPrefs.GetString("ACHI14", "FALSE");
         achi15 = PlayerPrefs.GetString("ACHI15", "FALSE");
+
+        achi16 = PlayerPrefs.GetString("ACHI16", "FALSE");
+        achi17 = PlayerPrefs.GetString("ACHI17", "FALSE");
+        achi18 = PlayerPrefs.GetString("ACHI18", "FALSE");
+
+        achi19 = PlayerPrefs.GetString("ACHI19", "FALSE");
+        achi20 = PlayerPrefs.GetString("ACHI20", "FALSE");
+
+        achi21 = PlayerPrefs.GetString("ACHI21", "FALSE");
+        achi22 = PlayerPrefs.GetString("ACHI22", "FALSE");
+        achi23 = PlayerPrefs.GetString("ACHI23", "FALSE");
+        achi24 = PlayerPrefs.GetString("ACHI24", "FALSE");
 
         if (!cold) {
             if (achi1 == "TRUE") {
@@ -84,6 +97,27 @@ public class ShowAchievement : MonoBehaviour
                 Achievement14();
             } else if (achi15 == "TRUE") {
                 Achievement15();
+
+            } else if (achi16 == "TRUE") {
+                Achievement16();
+            } else if (achi17 == "TRUE") {
+                Achievement17();
+            } else if (achi18 == "TRUE") {
+                Achievement18();
+
+            } else if (achi19 == "TRUE") {
+                Achievement19();
+            } else if (achi20 == "TRUE") {
+                Achievement20();
+
+            } else if (achi21 == "TRUE") {
+                Achievement21();
+            } else if (achi22 == "TRUE") {
+                Achievement22();
+            } else if (achi23 == "TRUE") {
+                Achievement23();
+            } else if (achi24 == "TRUE") {
+                Achievement24();
             }
         }
     }
@@ -238,6 +272,95 @@ public class ShowAchievement : MonoBehaviour
         StartCoroutine("ShowAchieve");
     }
 
+    public void Achievement16()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI16", "FINISH");
+        tmp.text = stac.GetText16();
+        sp.sprite = siac.GetIcon16();
+        icon.transform.localScale = new Vector2(1f, 1f);
+        StartCoroutine("ShowAchieve");
+    }
+
+    public void Achievement17()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI17", "FINISH");
+        tmp.text = stac.GetText17();
+        sp.sprite = siac.GetIcon17();
+        icon.transform.localScale = new Vector2(1f, 1f);
+        StartCoroutine("ShowAchieve");
+    }
+
+    public void Achievement18()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI18", "FINISH");
+        tmp.text = stac.GetText18();
+        sp.sprite = siac.GetIcon18();
+        icon.transform.localScale = new Vector2(1f, 1f);
+        StartCoroutine("ShowAchieve");
+    }
+
+    public void Achievement19()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI19", "FINISH");
+        tmp.text = stac.GetText19();
+        sp.sprite = siac.GetIcon19();
+        icon.transform.localScale = new Vector2(1f, 1f);
+        StartCoroutine("ShowAchieve");
+    }
+
+    public void Achievement20()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI20", "FINISH");
+        tmp.text = stac.GetText20();
+        sp.sprite = siac.GetIcon20();
+        icon.transform.localScale = new Vector2(1f, 1f);
+        StartCoroutine("ShowAchieve");
+    }
+
+    public void Achievement21()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI21", "FINISH");
+        tmp.text = stac.GetText21();
+        sp.sprite = siac.GetIcon21();
+        icon.transform.localScale = new Vector2(1f, 1f);
+        StartCoroutine("ShowAchieve");
+    }
+
+    public void Achievement22()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI22", "FINISH");
+        tmp.text = stac.GetText22();
+        sp.sprite = siac.GetIcon22();
+        icon.transform.localScale = new Vector2(1f, 1f);
+        StartCoroutine("ShowAchieve");
+    }
+
+    public void Achievement23()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI23", "FINISH");
+        tmp.text = stac.GetText23();
+        sp.sprite = siac.GetIcon23();
+        icon.transform.localScale = new Vector2(1f, 1f);
+        StartCoroutine("ShowAchieve");
+    }
+
+    public void Achievement24()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI24", "FINISH");
+        tmp.text = stac.GetText24();
+        sp.sprite = siac.GetIcon24();
+        icon.transform.localScale = new Vector2(1f, 1f);
+        StartCoroutine("ShowAchieve");
+    }
 
 
 
