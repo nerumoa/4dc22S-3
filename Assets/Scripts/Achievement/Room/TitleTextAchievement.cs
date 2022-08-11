@@ -6,92 +6,92 @@ public class TitleTextAchievement : MonoBehaviour
 {
     public string GetTitleText1()
     {
-        return "おかえり";
+        return "餅を搗きし者";
     }
 
     public string GetTitleText2()
     {
-        return "待ってた";
+        return "お餅大好き";
     }
 
     public string GetTitleText3()
     {
-        return "今日も一日";
+        return "ウルトラ餅ニスト";
     }
 
     public string GetTitleText4()
     {
-        return "ゲームプレイ、感謝します";
+        return "Welcome Hell";
     }
 
     public string GetTitleText5()
     {
-        return "お疲れ様です";
+        return "餅搗きに失敗は搗きもの";
     }
 
     public string GetTitleText6()
     {
-        return "まだやるの？";
+        return "あきらめるな、まだ搗ける";
     }
 
     public string GetTitleText7()
     {
-        return "すばらしい！";
+        return "ゲームプレイ、感謝します";
     }
 
     public string GetTitleText8()
     {
-        return "とてもすばらしい！";
+        return "お疲れ様です";
     }
 
     public string GetTitleText9()
     {
-        return "すばらしい・オブザイヤー";
+        return "まだやるの？";
     }
 
     public string GetTitleText10()
     {
-        return "よくやった！";
+        return "すばらしい！";
     }
 
     public string GetTitleText11()
     {
-        return "餅も積もれば山となる";
+        return "とてもすばらしい！";
     }
 
     public string GetTitleText12()
     {
-        return "千里の餅も、ひと足宛はこぶなり";
+        return "すばらしい・オブザイヤー";
     }
 
     public string GetTitleText13()
     {
-        return "餅を搗きし者";
+        return "よくやった！";
     }
 
     public string GetTitleText14()
     {
-        return "お餅大好き";
+        return "餅も積もれば山となる";
     }
 
     public string GetTitleText15()
     {
-        return "ウルトラ餅ニスト";
+        return "千里の餅も、ひと足宛はこぶなり";
     }
 
     public string GetTitleText16()
     {
-        return "Welcome Hell";
+        return "おかえり";
     }
 
     public string GetTitleText17()
     {
-        return "餅搗きに失敗は搗きもの";
+        return "待ってた";
     }
 
     public string GetTitleText18()
     {
-        return "あきらめるな、まだ搗ける";
+        return "今日も一日";
     }
 
     public string GetTitleText19()
