@@ -12,21 +12,21 @@ public class MochiManager : MonoBehaviour
         GameObject r = transform.GetChild(1).gameObject;
         GameObject sr = transform.GetChild(2).gameObject;
 
-        int rnd = Random.Range(0, 3);
+        int rnd = Random.Range(0, 10);
 
-        if (rnd == 0)
+        if (rnd == 9)
         {
-            n.SetActive(true);
+            sr.SetActive(true);
         }
 
-        else if (rnd == 1)
+        else if (rnd == 0 || rnd == 5 || rnd == 3)
         {
             r.SetActive(true);
         }
 
         else
         {
-            sr.SetActive(true);
+            n.SetActive(true);
         }
 
 

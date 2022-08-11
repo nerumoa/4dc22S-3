@@ -1286,7 +1286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683200261}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.1993976, y: 5.01, z: 0.009061199}
+  m_LocalPosition: {x: -7.27, y: 5.01, z: 0.009061199}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1424,6 +1424,7 @@ GameObject:
   - component: {fileID: 1810138480}
   - component: {fileID: 1810138482}
   - component: {fileID: 1810138481}
+  - component: {fileID: 1810138483}
   m_Layer: 5
   m_Name: TitleText
   m_TagString: Untagged
@@ -1448,8 +1449,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 850, y: 160}
+  m_AnchoredPosition: {x: 0, y: 210}
+  m_SizeDelta: {x: 1507.1755, y: 322.5272}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810138481
 MonoBehaviour:
@@ -1471,7 +1472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u30B2\u30FC\u30E0\u30AF\u30EA\u30A2\uFF01"
+  m_text: "\u30E1\u30C3\u30BB\u30FC\u30B8\u8868\u793A"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 29b6c0f40d6a8794abc6af258753e9f3, type: 2}
   m_sharedMaterial: {fileID: 3242468605865205188, guid: 29b6c0f40d6a8794abc6af258753e9f3, type: 2}
@@ -1498,8 +1499,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 110
-  m_fontSizeBase: 110
+  m_fontSize: 90
+  m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1534,7 +1535,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -148.39453, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1548,6 +1549,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810138479}
   m_CullTransparentMesh: 1
+--- !u!114 &1810138483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810138479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae37241c3c51aa4392b06d5bea52ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowMessage: {fileID: 1810138481}
 --- !u!1 &1870603571
 GameObject:
   m_ObjectHideFlags: 0
