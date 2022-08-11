@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042"
+  m_text: "\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042\u3042"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 29b6c0f40d6a8794abc6af258753e9f3, type: 2}
   m_sharedMaterial: {fileID: 3242468605865205188, guid: 29b6c0f40d6a8794abc6af258753e9f3, type: 2}
@@ -93,15 +93,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -25.710571, y: 38.566284, z: -26.69934, w: -75.10116}
+  m_margin: {x: -44.213867, y: 78.15405, z: -39.56836, w: -75.10116}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -335,6 +335,9 @@ GameObject:
   - component: {fileID: 1430625648976531601}
   - component: {fileID: 7355231502641134667}
   - component: {fileID: 8895117069034650757}
+  - component: {fileID: 5080554590933627166}
+  - component: {fileID: 8871531275891995521}
+  - component: {fileID: 6993498455447839796}
   - component: {fileID: 4451571886853933323}
   m_Layer: 0
   m_Name: Achievement
@@ -404,6 +407,15 @@ MonoBehaviour:
   achi1Sprite: {fileID: 21300000, guid: f836367712e7d1246aaed9ff9539063f, type: 3}
   achi2Sprite: {fileID: 21300000, guid: caf6f27a391cc4b4388ac2717ee48d3d, type: 3}
   achi3Sprite: {fileID: 21300000, guid: cd524b5f9b3444f429c12ab9f35c4f9e, type: 3}
+  achi4Sprite: {fileID: 21300000, guid: a416714bdb0f8934d9a5c31a7686d5cb, type: 3}
+  achi5Sprite: {fileID: 21300000, guid: e14ad7c4f9a76e24987c8f68c710e402, type: 3}
+  achi6Sprite: {fileID: 21300000, guid: 4ccf3ca5c8edc334ab311dc6234a4d27, type: 3}
+  achi7Sprite: {fileID: 21300000, guid: f41837092bcbf3244abdaf0177af663f, type: 3}
+  achi8Sprite: {fileID: 21300000, guid: f11c531f45e21eb449a865d21547eac0, type: 3}
+  achi9Sprite: {fileID: 21300000, guid: 95038a9680b617a4f894d3c060878bf9, type: 3}
+  achi10Sprite: {fileID: 21300000, guid: 280c90439c93908448aa92022edb4a94, type: 3}
+  achi11Sprite: {fileID: 21300000, guid: fe910a232d7cd444b889b9136f4f6226, type: 3}
+  achi12Sprite: {fileID: 21300000, guid: 4376952177e297941ac0596d7cc3fdba, type: 3}
 --- !u!114 &7355231502641134667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,6 +438,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17938f98bb758434d97a8e4402e047cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5080554590933627166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183905511567113655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124c3016b81cd8f41a1118aafc9c2b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8871531275891995521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183905511567113655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a85bc8d9ab0794e9b6ceaf91676809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6993498455447839796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183905511567113655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847d36d4441432c478cb3e5b54e2d1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4451571886853933323

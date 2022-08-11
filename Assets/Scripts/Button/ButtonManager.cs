@@ -87,7 +87,7 @@ public class ButtonManager : MonoBehaviour
         numMax = 2;
         timer = 0f;
         timerMax = 10f;
-        addScore = 200;
+        addScore = 50000;    // 200
         SetKey();
 
         B[0].gameObject.SetActive(true);
@@ -190,7 +190,7 @@ public class ButtonManager : MonoBehaviour
         } else if (totalTimer >= 20f) {
             Third();
             timerMax = 9.0f;
-            addScore = 300;
+            addScore = 50000; // 300
         }
     }
 

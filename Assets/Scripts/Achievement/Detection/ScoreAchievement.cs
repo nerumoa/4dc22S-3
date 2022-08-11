@@ -26,13 +26,6 @@ public class ScoreAchievement : MonoBehaviour
         PlayerPrefs.SetInt("ALLSCORE", allScore);
     }
 
-
-
-    private void OnDestroy()
-    {
-        PlayerPrefs.Save();
-    }
-
     /* Debug
     private void Update()
     {

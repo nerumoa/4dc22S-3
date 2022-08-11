@@ -13,15 +13,23 @@ public class CheckAchievement : MonoBehaviour
         achi1 = PlayerPrefs.GetString("ACHI1", "FALSE");
         achi2 = PlayerPrefs.GetString("ACHI2", "FALSE");
         achi3 = PlayerPrefs.GetString("ACHI3", "FALSE");
+
         achi4 = PlayerPrefs.GetString("ACHI4", "FALSE");
         achi5 = PlayerPrefs.GetString("ACHI5", "FALSE");
         achi6 = PlayerPrefs.GetString("ACHI6", "FALSE");
+
         achi7 = PlayerPrefs.GetString("ACHI7", "FALSE");
         achi8 = PlayerPrefs.GetString("ACHI8", "FALSE");
         achi9 = PlayerPrefs.GetString("ACHI9", "FALSE");
+
         achi10 = PlayerPrefs.GetString("ACHI10", "FALSE");
         achi11 = PlayerPrefs.GetString("ACHI11", "FALSE");
         achi12 = PlayerPrefs.GetString("ACHI12", "FALSE");
+    }
+
+    private void OnDestroy()
+    {
+        PlayerPrefs.Save();
     }
 
     void Update()
@@ -40,6 +48,7 @@ public class CheckAchievement : MonoBehaviour
         } else if (startCount == 4 && achi3 == "FALSE") {
             PlayerPrefs.SetString("ACHI3", "TRUE");
             achi3 = PlayerPrefs.GetString("ACHI3");
+
         } else if (gameoverCount == 1 && achi4 == "FALSE") {
             PlayerPrefs.SetString("ACHI4", "TRUE");
             achi4 = PlayerPrefs.GetString("ACHI4");
@@ -49,6 +58,26 @@ public class CheckAchievement : MonoBehaviour
         } else if (gameoverCount == 10 && achi6 == "FALSE") {
             PlayerPrefs.SetString("ACHI6", "TRUE");
             achi6 = PlayerPrefs.GetString("ACHI6");
+
+        } else if (maxScore >= 10000 && achi7 == "FALSE") {
+            PlayerPrefs.SetString("ACHI7", "TRUE");
+            achi7 = PlayerPrefs.GetString("ACHI7");
+        } else if (maxScore >= 50000 && achi8 == "FALSE") {
+            PlayerPrefs.SetString("ACHI8", "TRUE");
+            achi8 = PlayerPrefs.GetString("ACHI8");
+        } else if (maxScore >= 100000 && achi9 == "FALSE") {
+            PlayerPrefs.SetString("ACHI9", "TRUE");
+            achi9 = PlayerPrefs.GetString("ACHI9");
+
+        } else if (allScore >= 200000 && achi10 == "FALSE") {
+            PlayerPrefs.SetString("ACHI10", "TRUE");
+            achi10 = PlayerPrefs.GetString("ACHI10");
+        } else if (allScore >= 300000 && achi11 == "FALSE") {
+            PlayerPrefs.SetString("ACHI11", "TRUE");
+            achi11 = PlayerPrefs.GetString("ACHI11");
+        } else if (maxScore >= 500000 && achi12 == "FALSE") {
+            PlayerPrefs.SetString("ACHI12", "TRUE");
+            achi12 = PlayerPrefs.GetString("ACHI12");
         }
     }
 }
