@@ -6,17 +6,25 @@ using UnityEngine;
 public class Achievement : MonoBehaviour
 {
     [SerializeField] GameObject text = default;
+    [SerializeField] GameObject icon = default;
+
     TextMeshProUGUI achiText;
     TextMeshProUGUI titleText;
+    GameObject achievement;
     GameObject title;
+    SpriteRenderer sr;
     NotOpenAchievement noa;
     TitleTextAchievement tta;
     OpenTextAchievement ota;
+    ShowIconAchievement sia;
     string[] achi = new string[25];
 
     void Awake()
     {
         achiText = text.GetComponent<TextMeshProUGUI>();
+        sr = icon.GetComponent<SpriteRenderer>();
+        achievement = GameObject.Find("Achievement");
+        sia = achievement.GetComponent<ShowIconAchievement>();
         noa = GetComponent<NotOpenAchievement>();
         tta = GetComponent<TitleTextAchievement>();
         ota = GetComponent<OpenTextAchievement>();
@@ -136,6 +144,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen1();
         } else {
             achiText.text = ota.GetOpenText1();
+            sr.sprite = sia.GetIcon1();
         }
     }
 
@@ -145,6 +154,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen2();
         } else {
             achiText.text = ota.GetOpenText2();
+            sr.sprite = sia.GetIcon2();
         }
     }
 
@@ -154,6 +164,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen3();
         } else {
             achiText.text = ota.GetOpenText3();
+            sr.sprite = sia.GetIcon3();
         }
     }
 
@@ -162,7 +173,8 @@ public class Achievement : MonoBehaviour
         if (achi[4] != "FINISH") {
             achiText.text = noa.GetNotOpen4();
         } else {
-            achiText.text = ota.GetOpenText4(); ;
+            achiText.text = ota.GetOpenText4();
+            sr.sprite = sia.GetIcon4();
         }
     }
 
@@ -172,6 +184,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen5();
         } else {
             achiText.text = ota.GetOpenText5();
+            sr.sprite = sia.GetIcon5();
         }
     }
 
@@ -181,6 +194,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen6();
         } else {
             achiText.text = ota.GetOpenText6();
+            sr.sprite = sia.GetIcon6();
         }
     }
 
@@ -190,6 +204,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen7();
         } else {
             achiText.text = ota.GetOpenText7();
+            sr.sprite = sia.GetIcon7();
         }
     }
 
@@ -199,6 +214,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen8();
         } else {
             achiText.text = ota.GetOpenText8();
+            sr.sprite = sia.GetIcon8();
         }
     }
 
@@ -208,6 +224,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen9();
         } else {
             achiText.text = ota.GetOpenText9();
+            sr.sprite = sia.GetIcon9();
         }
     }
 
@@ -217,6 +234,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen10();
         } else {
             achiText.text = ota.GetOpenText10();
+            sr.sprite = sia.GetIcon10();
         }
     }
 
@@ -226,6 +244,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen11();
         } else {
             achiText.text = ota.GetOpenText11();
+            sr.sprite = sia.GetIcon11();
         }
     }
 
@@ -235,6 +254,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen12();
         } else {
             achiText.text = ota.GetOpenText12();
+            sr.sprite = sia.GetIcon12();
         }
     }
 
@@ -244,6 +264,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen13();
         } else {
             achiText.text = ota.GetOpenText13();
+            sr.sprite = sia.GetIcon13();
         }
     }
 
@@ -253,6 +274,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen14();
         } else {
             achiText.text = ota.GetOpenText14();
+            sr.sprite = sia.GetIcon14();
         }
     }
 
@@ -262,6 +284,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen15();
         } else {
             achiText.text = ota.GetOpenText15();
+            sr.sprite = sia.GetIcon15();
         }
     }
 
@@ -271,6 +294,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen16();
         } else {
             achiText.text = ota.GetOpenText16();
+            sr.sprite = sia.GetIcon16();
         }
     }
 
@@ -280,6 +304,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen17();
         } else {
             achiText.text = ota.GetOpenText17();
+            sr.sprite = sia.GetIcon17();
         }
     }
 
@@ -289,6 +314,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen18();
         } else {
             achiText.text = ota.GetOpenText18();
+            sr.sprite = sia.GetIcon18();
         }
     }
 
@@ -298,6 +324,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen19();
         } else {
             achiText.text = ota.GetOpenText19();
+            sr.sprite = sia.GetIcon19();
         }
     }
 
@@ -307,6 +334,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen20();
         } else {
             achiText.text = ota.GetOpenText20();
+            sr.sprite = sia.GetIcon20();
         }
     }
 
@@ -316,6 +344,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen21();
         } else {
             achiText.text = ota.GetOpenText21();
+            sr.sprite = sia.GetIcon21();
         }
     }
 
@@ -325,6 +354,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen22();
         } else {
             achiText.text = ota.GetOpenText22();
+            sr.sprite = sia.GetIcon22();
         }
     }
 
@@ -334,6 +364,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen23();
         } else {
             achiText.text = ota.GetOpenText23();
+            sr.sprite = sia.GetIcon23();
         }
     }
 
@@ -343,6 +374,7 @@ public class Achievement : MonoBehaviour
             achiText.text = noa.GetNotOpen24();
         } else {
             achiText.text = ota.GetOpenText24();
+            sr.sprite = sia.GetIcon24();
         }
     }
 }
