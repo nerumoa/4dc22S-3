@@ -39,6 +39,8 @@ public class Message : MonoBehaviour
 
         else if (rnd == 13) ShowMessage.text = "お餅をお持ちでない！？";
 
+        else if (rnd == 14) ShowMessage.text = "餅の大食い勝負で、私の右に出る者はいない！";
+
 
 
 
