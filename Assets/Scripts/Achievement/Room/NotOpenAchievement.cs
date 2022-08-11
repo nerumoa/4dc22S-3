@@ -111,7 +111,7 @@ public class NotOpenAchievement : MonoBehaviour
 
     public string GetNotOpen22()
     {
-        return "まだこの実績は\n開放されていません。\n\n今すぐ\nミュージックルームに直行だ！";
+        return "まだこの実績は\n開放されていません。\n\n今すぐ\nミュージックルームに\n直行だ！";
     }
 
     public string GetNotOpen23()

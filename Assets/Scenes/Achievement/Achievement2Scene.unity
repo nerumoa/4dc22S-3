@@ -4086,7 +4086,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aiueo
+  m_text: "\u4ECA\u307E\u3067\u306B\u7372\u5F97\u3057\u305F\n\u5B9F\u7E3E\u3092\u898B\u308B\u3053\u3068\u304C\u51FA\u6765\u307E\u3059\u3002"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 29b6c0f40d6a8794abc6af258753e9f3, type: 2}
   m_sharedMaterial: {fileID: 3242468605865205188, guid: 29b6c0f40d6a8794abc6af258753e9f3, type: 2}
