@@ -16,9 +16,7 @@ public class ShowAchievement : MonoBehaviour
     SpriteRenderer sp;
 
     bool cold = false;
-    string achi1, achi2, achi3, achi4, achi5, achi6, achi7, achi8, achi9, achi10;
-    string achi11, achi12, achi13, achi14, achi15, achi16, achi17, achi18, achi19, achi20;
-    string achi21, achi22, achi23, achi24;
+    string[] achi = new string[25];
 
     private void Awake()
     {
@@ -30,93 +28,65 @@ public class ShowAchievement : MonoBehaviour
 
     void Update()
     {
-        achi1 = PlayerPrefs.GetString("ACHI1", "FALSE");
-        achi2 = PlayerPrefs.GetString("ACHI2", "FALSE");
-        achi3 = PlayerPrefs.GetString("ACHI3", "FALSE");
-
-        achi4 = PlayerPrefs.GetString("ACHI4", "FALSE");
-        achi5 = PlayerPrefs.GetString("ACHI5", "FALSE");
-        achi6 = PlayerPrefs.GetString("ACHI6", "FALSE");
-
-        achi7 = PlayerPrefs.GetString("ACHI7", "FALSE");
-        achi8 = PlayerPrefs.GetString("ACHI8", "FALSE");
-        achi9 = PlayerPrefs.GetString("ACHI9", "FALSE");
-
-        achi10 = PlayerPrefs.GetString("ACHI10", "FALSE");
-        achi11 = PlayerPrefs.GetString("ACHI11", "FALSE");
-        achi12 = PlayerPrefs.GetString("ACHI12", "FALSE");
-
-        achi13 = PlayerPrefs.GetString("ACHI13", "FALSE");
-        achi14 = PlayerPrefs.GetString("ACHI14", "FALSE");
-        achi15 = PlayerPrefs.GetString("ACHI15", "FALSE");
-
-        achi16 = PlayerPrefs.GetString("ACHI16", "FALSE");
-        achi17 = PlayerPrefs.GetString("ACHI17", "FALSE");
-        achi18 = PlayerPrefs.GetString("ACHI18", "FALSE");
-
-        achi19 = PlayerPrefs.GetString("ACHI19", "FALSE");
-        achi20 = PlayerPrefs.GetString("ACHI20", "FALSE");
-
-        achi21 = PlayerPrefs.GetString("ACHI21", "FALSE");
-        achi22 = PlayerPrefs.GetString("ACHI22", "FALSE");
-        achi23 = PlayerPrefs.GetString("ACHI23", "FALSE");
-        achi24 = PlayerPrefs.GetString("ACHI24", "FALSE");
+        for (int i = 1; i <= 24; i++) {
+            achi[i] = PlayerPrefs.GetString("ACHI" + i, "FALSE");
+        }
 
         if (!cold) {
-            if (achi1 == "TRUE") {
+            if (achi[1] == "TRUE") {
                 Achievement1();
-            } else if (achi2 == "TRUE") {
+            } else if (achi[2] == "TRUE") {
                 Achievement2();
-            } else if (achi3 == "TRUE") {
+            } else if (achi[3] == "TRUE") {
                 Achievement3();
 
-            } else if (achi4 == "TRUE") {
+            } else if (achi[4] == "TRUE") {
                 Achievement4();
-            } else if (achi5 == "TRUE") {
+            } else if (achi[5] == "TRUE") {
                 Achievement5();
-            } else if (achi6 == "TRUE") {
+            } else if (achi[6] == "TRUE") {
                 Achievement6();
 
-            } else if (achi7 == "TRUE") {
+            } else if (achi[7] == "TRUE") {
                 Achievement7();
-            } else if (achi8 == "TRUE") {
+            } else if (achi[8] == "TRUE") {
                 Achievement8();
-            } else if (achi9 == "TRUE") {
+            } else if (achi[9] == "TRUE") {
                 Achievement9();
 
-            } else if (achi10 == "TRUE") {
+            } else if (achi[10] == "TRUE") {
                 Achievement10();
-            } else if (achi11 == "TRUE") {
+            } else if (achi[11] == "TRUE") {
                 Achievement11();
-            } else if (achi12 == "TRUE") {
+            } else if (achi[12] == "TRUE") {
                 Achievement12();
 
-            } else if (achi13 == "TRUE") {
+            } else if (achi[13] == "TRUE") {
                 Achievement13();
-            } else if (achi14 == "TRUE") {
+            } else if (achi[14] == "TRUE") {
                 Achievement14();
-            } else if (achi15 == "TRUE") {
+            } else if (achi[15] == "TRUE") {
                 Achievement15();
 
-            } else if (achi16 == "TRUE") {
+            } else if (achi[16] == "TRUE") {
                 Achievement16();
-            } else if (achi17 == "TRUE") {
+            } else if (achi[17] == "TRUE") {
                 Achievement17();
-            } else if (achi18 == "TRUE") {
+            } else if (achi[18] == "TRUE") {
                 Achievement18();
 
-            } else if (achi19 == "TRUE") {
+            } else if (achi[19] == "TRUE") {
                 Achievement19();
-            } else if (achi20 == "TRUE") {
+            } else if (achi[20] == "TRUE") {
                 Achievement20();
 
-            } else if (achi21 == "TRUE") {
+            } else if (achi[21] == "TRUE") {
                 Achievement21();
-            } else if (achi22 == "TRUE") {
+            } else if (achi[22] == "TRUE") {
                 Achievement22();
-            } else if (achi23 == "TRUE") {
+            } else if (achi[23] == "TRUE") {
                 Achievement23();
-            } else if (achi24 == "TRUE") {
+            } else if (achi[24] == "TRUE") {
                 Achievement24();
             }
         }

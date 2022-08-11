@@ -6,92 +6,92 @@ public class ShowTextAchievement : MonoBehaviour
 {
     public string GetText1()
     {
-        return "おかえり";
+        return "餅を搗きし者";
     }
 
     public string GetText2()
     {
-        return "待ってた";
+        return "お餅大好き";
     }
 
     public string GetText3()
     {
-        return "今日も一日";
+        return "ウルトラ餅ニスト";
     }
 
     public string GetText4()
     {
-        return "ゲームプレイ、\n感謝します";
+        return "Welcome Hell";
     }
 
     public string GetText5()
     {
-        return "お疲れ様です";
+        return "餅搗きに\n失敗は搗きもの";
     }
 
     public string GetText6()
     {
-        return "まだやるの？";
+        return "あきらめるな、\nまだ搗ける";
     }
 
     public string GetText7()
     {
-        return "すばらしい！";
+        return "ゲームプレイ、\n感謝します";
     }
 
     public string GetText8()
     {
-        return "とても\nすばらしい！";
+        return "お疲れ様です";
     }
 
     public string GetText9()
     {
-        return "すばらしい・\nオブザイヤー";
+        return "まだやるの？";
     }
 
     public string GetText10()
     {
-        return "よくやった！";
+        return "すばらしい！";
     }
 
     public string GetText11()
     {
-        return "餅も積もれば\n山となる";
+        return "とても\nすばらしい！";
     }
 
     public string GetText12()
     {
-        return "千里の餅も、\nひと足宛はこぶなり";
+        return "すばらしい・\nオブザイヤー";
     }
 
     public string GetText13()
     {
-        return "餅を搗きし者";
+        return "よくやった！";
     }
 
     public string GetText14()
     {
-        return "お餅大好き";
+        return "餅も積もれば\n山となる";
     }
 
     public string GetText15()
     {
-        return "ウルトラ餅ニスト";
+        return "千里の餅も、\nひと足宛はこぶなり";
     }
 
     public string GetText16()
     {
-        return "Welcome Hell";
+        return "おかえり";
     }
 
     public string GetText17()
     {
-        return "餅搗きに\n失敗は搗きもの";
+        return "待ってた";
     }
 
     public string GetText18()
     {
-        return "あきらめるな、\nまだ搗ける";
+        return "今日も一日";
     }
 
     public string GetText19()

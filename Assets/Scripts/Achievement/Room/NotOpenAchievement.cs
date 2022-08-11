@@ -6,92 +6,92 @@ public class NotOpenAchievement : MonoBehaviour
 {
     public string GetNotOpen1()
     {
-        return "まだこの実績は\n開放されていません。\n\nまた会いましょう。";
+        return "まだこの実績は\n開放されていません。\n\n初めての挑戦は\nとても輝かしい。";
     }
 
     public string GetNotOpen2()
     {
-        return "まだこの実績は\n開放されていません。\n\nまた明日。";
+        return "まだこの実績は\n開放されていません。\n\n一人前への挑戦。";
     }
 
     public string GetNotOpen3()
     {
-        return "まだこの実績は\n開放されていません。\n\nさて、今日も―";
+        return "まだこの実績は\n開放されていません。\n\n職人の手さばき。";
     }
 
     public string GetNotOpen4()
     {
-        return "まだこの実績は\n開放されていません。\n\n負けない心。";
+        return "まだこの実績は\n開放されていません。\n\n誰にだって失敗はある。";    //わよん。
     }
 
     public string GetNotOpen5()
     {
-        return "まだこの実績は\n開放されていません。\n\n諦めない心。";
+        return "まだこの実績は\n開放されていません。\n\nその痛みは、\n己を強くする。";
     }
 
     public string GetNotOpen6()
     {
-        return "まだこの実績は\n開放されていません。\n\n挫けない心。";
+        return "まだこの実績は\n開放されていません。\n\n痛い。";
     }
 
     public string GetNotOpen7()
     {
-        return "まだこの実績は\n開放されていません。\n\n山の登り始め。";
+        return "まだこの実績は\n開放されていません。\n\n負けない心。";
     }
 
     public string GetNotOpen8()
     {
-        return "まだこの実績は\n開放されていません。\n\nさらなる高みへ。";
+        return "まだこの実績は\n開放されていません。\n\n諦めない心。";
     }
 
     public string GetNotOpen9()
     {
-        return "まだこの実績は\n開放されていません。\n\n頂きは果てしなく遠い。";
+        return "まだこの実績は\n開放されていません。\n\n挫けない心。";
     }
 
     public string GetNotOpen10()
     {
-        return "まだこの実績は\n開放されていません。\n\n小さな積み重ね。";
+        return "まだこの実績は\n開放されていません。\n\n山の登り始め。";
     }
 
     public string GetNotOpen11()
     {
-        return "まだこの実績は\n開放されていません。\n\n大きな積み重ね。";
+        return "まだこの実績は\n開放されていません。\n\nさらなる高みへ。";
     }
 
     public string GetNotOpen12()
     {
-        return "まだこの実績は\n開放されていません。\n\n継続は力なり。";
+        return "まだこの実績は\n開放されていません。\n\n頂きは果てしなく遠い。";
     }
 
     public string GetNotOpen13()
     {
-        return "まだこの実績は\n開放されていません。\n\n初めての挑戦は\nとても輝かしい。";
+        return "まだこの実績は\n開放されていません。\n\n小さな積み重ね。";
     }
 
     public string GetNotOpen14()
     {
-        return "まだこの実績は\n開放されていません。\n\n一人前への挑戦。";
+        return "まだこの実績は\n開放されていません。\n\n大きな積み重ね。";
     }
 
     public string GetNotOpen15()
     {
-        return "まだこの実績は\n開放されていません。\n\n職人の手さばき。";
+        return "まだこの実績は\n開放されていません。\n\n継続は力なり。";
     }
 
     public string GetNotOpen16()
     {
-        return "まだこの実績は\n開放されていません。\n\n誰にだって失敗はある。";    //わよん。
+        return "まだこの実績は\n開放されていません。\n\nまた会いましょう。";
     }
 
     public string GetNotOpen17()
     {
-        return "まだこの実績は\n開放されていません。\n\nその痛みは、\n己を強くする。";
+        return "まだこの実績は\n開放されていません。\n\nまた明日。";
     }
 
     public string GetNotOpen18()
     {
-        return "まだこの実績は\n開放されていません。\n\n痛い。";
+        return "まだこの実績は\n開放されていません。\n\nさて、今日も―";
     }
 
     public string GetNotOpen19()
