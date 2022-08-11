@@ -11,13 +11,13 @@ public class Message : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int rnd = Random.Range(1, 13);
+        int rnd = Random.Range(1, 15);
 
         if (rnd == 1) ShowMessage.text = "薄暗い色なのは...臼くらいw";
 
         else if (rnd == 2) ShowMessage.text = "うすうす気づいてたんですよね・・・臼にｗ";
 
-        else if (rnd == 3) ShowMessage.text = "餅のモチーフ";
+        else if (rnd == 3) ShowMessage.text = "餅の...モチーフｗ";
 
         else if (rnd == 4) ShowMessage.text = "二兎を追う者は一兎をも得ず";
 
@@ -25,7 +25,7 @@ public class Message : MonoBehaviour
 
         else if (rnd == 6) ShowMessage.text = "棚から牡丹餅";
 
-        else if (rnd == 7) ShowMessage.text = "持ちのいい餅";
+        else if (rnd == 7) ShowMessage.text = "持ちのいい餅ｗ";
 
         else if (rnd == 8) ShowMessage.text = "止まない雨はない 開けない夜はない 搗けない餅はない";
 
@@ -36,6 +36,10 @@ public class Message : MonoBehaviour
         else if (rnd == 11) ShowMessage.text = "The mochi is money";
 
         else if (rnd == 12) ShowMessage.text = "何もしないで後悔するより、餅をついて後悔するほうが良い";
+
+        else if (rnd == 13) ShowMessage.text = "お餅をお持ちでない！？";
+
+
 
 
 
