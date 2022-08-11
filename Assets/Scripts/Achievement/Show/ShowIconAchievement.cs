@@ -7,15 +7,22 @@ public class ShowIconAchievement : MonoBehaviour
     [SerializeField] Sprite achi1Sprite = default;
     [SerializeField] Sprite achi2Sprite = default;
     [SerializeField] Sprite achi3Sprite = default;
+
     [SerializeField] Sprite achi4Sprite = default;
     [SerializeField] Sprite achi5Sprite = default;
     [SerializeField] Sprite achi6Sprite = default;
+
     [SerializeField] Sprite achi7Sprite = default;
     [SerializeField] Sprite achi8Sprite = default;
     [SerializeField] Sprite achi9Sprite = default;
+
     [SerializeField] Sprite achi10Sprite = default;
     [SerializeField] Sprite achi11Sprite = default;
     [SerializeField] Sprite achi12Sprite = default;
+
+    [SerializeField] Sprite achi13Sprite = default;
+    [SerializeField] Sprite achi14Sprite = default;
+    [SerializeField] Sprite achi15Sprite = default;
 
     public Sprite GetIcon1()
     {
@@ -75,5 +82,20 @@ public class ShowIconAchievement : MonoBehaviour
     public Sprite GetIcon12()
     {
         return achi12Sprite;
+    }
+
+    public Sprite GetIcon13()
+    {
+        return achi13Sprite;
+    }
+
+    public Sprite GetIcon14()
+    {
+        return achi14Sprite;
+    }
+
+    public Sprite GetIcon15()
+    {
+        return achi15Sprite;
     }
 }

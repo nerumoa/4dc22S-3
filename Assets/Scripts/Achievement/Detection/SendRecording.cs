@@ -6,11 +6,18 @@ public class SendRecording : MonoBehaviour
 {
     GameoverAchievement ga;
     ScoreAchievement sa;
+    SuccessAchievement sua;
 
     private void Awake()
     {
         ga = GetComponent<GameoverAchievement>();
         sa = GetComponent<ScoreAchievement>();
+        sua = GetComponent<SuccessAchievement>();
+    }
+
+    public void SendGameoverRecord()
+    {
+        ga.AddGameoverCount();
     }
 
     public void SendScoreRecord(int score, int addScore)
@@ -19,8 +26,9 @@ public class SendRecording : MonoBehaviour
         sa.AddAllScore(addScore);
     }
 
-    public void SendGameoverRecord()
+    public void SendSuccessRecord()
     {
-        ga.AddGameoverCount();
+        sua.AddSuccessCount();
     }
+
 }

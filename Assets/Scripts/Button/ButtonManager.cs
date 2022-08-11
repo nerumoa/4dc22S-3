@@ -87,7 +87,7 @@ public class ButtonManager : MonoBehaviour
         numMax = 2;
         timer = 0f;
         timerMax = 10f;
-        addScore = 50000;    // 200
+        addScore = 200;
         SetKey();
 
         B[0].gameObject.SetActive(true);
@@ -131,6 +131,7 @@ public class ButtonManager : MonoBehaviour
         cold = true;
         sc.AddScore(addScore);
         score = sc.GetScore();
+        sr.SendSuccessRecord();
         sr.SendScoreRecord(score, addScore);
         StartCoroutine("NextKey");
     }
@@ -150,47 +151,47 @@ public class ButtonManager : MonoBehaviour
     {
         if (totalTimer >= 240f) {
             timerMax = 2.5f;
-            addScore = 1000;
+            addScore += 100;
         } else if (totalTimer >= 220f) {
             timerMax = 2.66f;
-            addScore = 900;
+            addScore += 50;
         } else if (totalTimer >= 200f) {
             timerMax = 2.83f;
-            addScore = 850;
+            addScore += 50;
         } else if (totalTimer >= 180f) {
             timerMax = 3.0f;
-            addScore = 800;
+            addScore += 50;
         } else if (totalTimer >= 160f) {
             timerMax = 3.2f;
-            addScore = 750;
+            addScore += 50;
         } else if (totalTimer >= 140f) {
             timerMax = 3.4f;
-            addScore = 700;
+            addScore += 50;
         } else if (totalTimer >= 120f) {
             timerMax = 3.6f;
-            addScore = 650;
+            addScore += 50;
         } else if (totalTimer >= 100f) {
             timerMax = 3.8f;
-            addScore = 600;
+            addScore += 50;
         } else if (totalTimer >= 80f) {
             timerMax = 4.0f;
-            addScore = 550;
+            addScore += 50;
         } else if (totalTimer >= 60f) {
             Fifth();
             timerMax = 5.0f;
-            addScore = 500;
+            addScore += 100;
         } else if (totalTimer >= 50f) {
             timerMax = 6.0f;
         } else if (totalTimer >= 40f) {
             Fourth();
             timerMax = 7.0f;
-            addScore = 400;
+            addScore += 100;
         } else if (totalTimer >= 30f) {
             timerMax = 8.0f;
         } else if (totalTimer >= 20f) {
             Third();
             timerMax = 9.0f;
-            addScore = 50000; // 300
+            addScore += 100;
         }
     }
 

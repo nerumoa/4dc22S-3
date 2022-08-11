@@ -14,8 +14,10 @@ public class StartAchievement : MonoBehaviour
         PlayerPrefs.SetInt("START", startCount);
     }
 
+    /* Debug
     private void Update()
     {
         Debug.Log("Start:" + startCount);
     }
+    */
 }

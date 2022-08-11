@@ -63,4 +63,19 @@ public class ShowTextAchievement : MonoBehaviour
     {
         return "千里の餅も、\nひと足宛はこぶなり";
     }
+
+    public string GetText13()
+    {
+        return "餅をつきし者";
+    }
+
+    public string GetText14()
+    {
+        return "お餅大好き";
+    }
+
+    public string GetText15()
+    {
+        return "ウルトラ餅ニスト";
+    }
 }
