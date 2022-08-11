@@ -9,26 +9,19 @@ public class StartAchievement : MonoBehaviour
     void Awake()
     {
         startCount = PlayerPrefs.GetInt("START", 0);
-    }
-
-    private void Start()
-    {
         startCount++;
+        PlayerPrefs.SetInt("START", startCount);
     }
 
     private void OnDestroy()
     {
-        PlayerPrefs.SetInt("START", startCount);
         PlayerPrefs.Save();
     }
 
+    /* Debug
     private void Update()
     {
         Debug.Log("Start:" + startCount);
     }
-
-    public int GetStartCount()
-    {
-        return startCount;
-    }
+    */
 }

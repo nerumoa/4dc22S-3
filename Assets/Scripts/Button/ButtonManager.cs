@@ -9,9 +9,11 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject TargetObject = default;
     [SerializeField] private GameObject scoreText = default;
     [SerializeField] private GameObject gameoverText = default;
+    [SerializeField] private GameObject achievement = default;
 
     PlayerController pc;
     Score sc;
+    SendRecording sr;
     GameObject[] B = new GameObject[6];
 
     string[] key_base = new string[] { "W", "A", "S", "D", "UpArrow", "LeftArrow", "DownArrow", "RightArrow" };
@@ -22,7 +24,7 @@ public class ButtonManager : MonoBehaviour
     float timer = 0f;
     float totalTimer = 0f;
     float timerMax;
-    int score;
+    int addScore, score;
     bool start = false;
     bool cold = false;
     bool invi = false;
@@ -31,6 +33,7 @@ public class ButtonManager : MonoBehaviour
     void Awake()
     {
         pc = GetComponent<PlayerController>();
+        sr = achievement.GetComponent<SendRecording>();
         sc = scoreText.GetComponent<Score>();
         sc.ResetScore();
         for (int i = 0; i < 6; i++) {
@@ -84,7 +87,7 @@ public class ButtonManager : MonoBehaviour
         numMax = 2;
         timer = 0f;
         timerMax = 10f;
-        score = 200;
+        addScore = 200;
         SetKey();
 
         B[0].gameObject.SetActive(true);
@@ -126,7 +129,9 @@ public class ButtonManager : MonoBehaviour
     private void Next()
     {
         cold = true;
-        sc.AddScore(score);
+        sc.AddScore(addScore);
+        score = sc.GetScore();
+        sr.SendScoreRecord(score, addScore);
         StartCoroutine("NextKey");
     }
 
@@ -145,47 +150,47 @@ public class ButtonManager : MonoBehaviour
     {
         if (totalTimer >= 240f) {
             timerMax = 2.5f;
-            score = 1000;
+            addScore = 1000;
         } else if (totalTimer >= 220f) {
             timerMax = 2.66f;
-            score = 900;
+            addScore = 900;
         } else if (totalTimer >= 200f) {
             timerMax = 2.83f;
-            score = 850;
+            addScore = 850;
         } else if (totalTimer >= 180f) {
             timerMax = 3.0f;
-            score = 800;
+            addScore = 800;
         } else if (totalTimer >= 160f) {
             timerMax = 3.2f;
-            score = 750;
+            addScore = 750;
         } else if (totalTimer >= 140f) {
             timerMax = 3.4f;
-            score = 700;
+            addScore = 700;
         } else if (totalTimer >= 120f) {
             timerMax = 3.6f;
-            score = 650;
+            addScore = 650;
         } else if (totalTimer >= 100f) {
             timerMax = 3.8f;
-            score = 600;
+            addScore = 600;
         } else if (totalTimer >= 80f) {
             timerMax = 4.0f;
-            score = 550;
+            addScore = 550;
         } else if (totalTimer >= 60f) {
             Fifth();
             timerMax = 5.0f;
-            score = 500;
+            addScore = 500;
         } else if (totalTimer >= 50f) {
             timerMax = 6.0f;
         } else if (totalTimer >= 40f) {
             Fourth();
             timerMax = 7.0f;
-            score = 400;
+            addScore = 400;
         } else if (totalTimer >= 30f) {
             timerMax = 8.0f;
         } else if (totalTimer >= 20f) {
             Third();
             timerMax = 9.0f;
-            score = 300;
+            addScore = 300;
         }
     }
 
@@ -238,11 +243,6 @@ public class ButtonManager : MonoBehaviour
     public int GetHP()
     {
         return hp;
-    }
-
-    public int GetScore()
-    {
-        return score;
     }
 
 
