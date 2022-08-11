@@ -20,8 +20,9 @@ public class Achievement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("p")) {
-            achi1 = true;
+        // ShowAchievementと同じやり方でテキストを取る
+
+        if (PlayerPrefs.GetString("ACHI1") == "FINISH") {
             if (titleText.gameObject.name == "Text1") {
                 titleText.text = "止まない雨はない。開けない夜はない。搗けない餅はない。";
                 titleText.fontSize = 37;
@@ -31,7 +32,7 @@ public class Achievement : MonoBehaviour
 
     public void Achievement1()
     {
-        if (!achi1) {
+        if (PlayerPrefs.GetString("ACHI1") != "FINISH") {
             achiText.text = "これはテストです。これはテストです。これはテストです。";
         } else {
             achiText.text = "餅を10000回搗くと取得。\n餅つきマスターの証。";

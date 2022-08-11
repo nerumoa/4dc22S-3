@@ -218,7 +218,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI10", "FINISH");
         tmp.text = stac.GetText10();
         sp.sprite = siac.GetIcon10();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -228,7 +228,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI11", "FINISH");
         tmp.text = stac.GetText11();
         sp.sprite = siac.GetIcon11();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -238,7 +238,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI12", "FINISH");
         tmp.text = stac.GetText12();
         sp.sprite = siac.GetIcon12();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -248,7 +248,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI13", "FINISH");
         tmp.text = stac.GetText13();
         sp.sprite = siac.GetIcon13();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -258,7 +258,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI14", "FINISH");
         tmp.text = stac.GetText14();
         sp.sprite = siac.GetIcon14();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -268,7 +268,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI15", "FINISH");
         tmp.text = stac.GetText15();
         sp.sprite = siac.GetIcon15();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -278,7 +278,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI16", "FINISH");
         tmp.text = stac.GetText16();
         sp.sprite = siac.GetIcon16();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -288,7 +288,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI17", "FINISH");
         tmp.text = stac.GetText17();
         sp.sprite = siac.GetIcon17();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -298,7 +298,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI18", "FINISH");
         tmp.text = stac.GetText18();
         sp.sprite = siac.GetIcon18();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -308,7 +308,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI19", "FINISH");
         tmp.text = stac.GetText19();
         sp.sprite = siac.GetIcon19();
-        icon.transform.localScale = new Vector2(0.25f, 0.25f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -318,7 +318,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI20", "FINISH");
         tmp.text = stac.GetText20();
         sp.sprite = siac.GetIcon20();
-        icon.transform.localScale = new Vector2(0.25f, 0.25f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -328,7 +328,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI21", "FINISH");
         tmp.text = stac.GetText21();
         sp.sprite = siac.GetIcon21();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -338,7 +338,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI22", "FINISH");
         tmp.text = stac.GetText22();
         sp.sprite = siac.GetIcon22();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -348,7 +348,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI23", "FINISH");
         tmp.text = stac.GetText23();
         sp.sprite = siac.GetIcon23();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -358,7 +358,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI24", "FINISH");
         tmp.text = stac.GetText24();
         sp.sprite = siac.GetIcon24();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(1.25f, 1.25f);
         StartCoroutine("ShowAchieve");
     }
 
