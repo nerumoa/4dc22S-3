@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: senbae
+  m_Name: MoveSenbae
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,21 +21,21 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: a2dd91ea7f585fc4584923a3e164901c, type: 3}
-    - time: 0.05
-      value: {fileID: 21300000, guid: 16bdd646c4f03d74a862e637be3645ae, type: 3}
     - time: 0.1
-      value: {fileID: 21300000, guid: a98d0b94ae60f3841892492648860206, type: 3}
-    - time: 0.15
-      value: {fileID: 21300000, guid: 3d6305c99f4d3e5488df9a6849e61e9a, type: 3}
+      value: {fileID: 21300000, guid: 16bdd646c4f03d74a862e637be3645ae, type: 3}
     - time: 0.2
+      value: {fileID: 21300000, guid: a98d0b94ae60f3841892492648860206, type: 3}
+    - time: 0.3
+      value: {fileID: 21300000, guid: 3d6305c99f4d3e5488df9a6849e61e9a, type: 3}
+    - time: 0.4
       value: {fileID: 21300000, guid: 8f9167ccbd274f8428d0c4a2e3f76a12, type: 3}
-    - time: 0.25
+    - time: 0.5
       value: {fileID: 21300000, guid: c349ec25d91f2d74f90b3bfbe9ae1f73, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 20
+  m_SampleRate: 100
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -61,7 +61,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3
+    m_StopTime: 0.51
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
