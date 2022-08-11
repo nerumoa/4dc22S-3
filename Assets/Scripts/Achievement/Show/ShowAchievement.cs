@@ -308,7 +308,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI19", "FINISH");
         tmp.text = stac.GetText19();
         sp.sprite = siac.GetIcon19();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(0.25f, 0.25f);
         StartCoroutine("ShowAchieve");
     }
 
@@ -318,7 +318,7 @@ public class ShowAchievement : MonoBehaviour
         PlayerPrefs.SetString("ACHI20", "FINISH");
         tmp.text = stac.GetText20();
         sp.sprite = siac.GetIcon20();
-        icon.transform.localScale = new Vector2(1f, 1f);
+        icon.transform.localScale = new Vector2(0.25f, 0.25f);
         StartCoroutine("ShowAchieve");
     }
 

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class TitleTimer : MonoBehaviour
 {
-    [SerializeField] GameObject achievement = default;
-
+    GameObject achievement;
     SendRecording sr;
     float timer = 0f;
 
     private void Awake()
     {
+        achievement = GameObject.Find("Achievement");
         sr = achievement.GetComponent<SendRecording>();
     }
 

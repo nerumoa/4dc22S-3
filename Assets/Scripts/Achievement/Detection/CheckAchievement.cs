@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckAchievement : MonoBehaviour
 {
-    int startCount, gameoverCount, maxScore, allScore, successCount, damageCount, _void, gandhi;
+    int startCount, gameoverCount, maxScore, allScore, successCount, damageCount, rare, sRare, _void, gandhi;
     string achi1, achi2, achi3, achi4, achi5, achi6, achi7, achi8, achi9, achi10;
     string achi11, achi12, achi13, achi14, achi15, achi16, achi17, achi18, achi19, achi20;
     string achi21, achi22, achi23, achi24;
@@ -57,6 +57,8 @@ public class CheckAchievement : MonoBehaviour
         allScore = PlayerPrefs.GetInt("ALLSCORE", 0);
         successCount = PlayerPrefs.GetInt("SUCCESS", 0);
         damageCount = PlayerPrefs.GetInt("DAMAGE", 0);
+        rare = PlayerPrefs.GetInt("RARE", 0);
+        sRare = PlayerPrefs.GetInt("SRARE", 0);
         _void = PlayerPrefs.GetInt("VOID", 0);
         gandhi = PlayerPrefs.GetInt("GANDHI", 0);
 
@@ -120,10 +122,10 @@ public class CheckAchievement : MonoBehaviour
             PlayerPrefs.SetString("ACHI18", "TRUE");
             achi18 = PlayerPrefs.GetString("ACHI18");
 
-        } else if (damageCount >= 50000 && achi19 == "FALSE") {
+        } else if (rare == 1 && achi19 == "FALSE") {
             PlayerPrefs.SetString("ACHI19", "TRUE");
             achi19 = PlayerPrefs.GetString("ACHI19");
-        } else if (damageCount >= 500000 && achi20 == "FALSE") {
+        } else if (sRare == 1 && achi20 == "FALSE") {
             PlayerPrefs.SetString("ACHI20", "TRUE");
             achi20 = PlayerPrefs.GetString("ACHI20");
 
