@@ -10,6 +10,8 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject scoreText = default;
     [SerializeField] private GameObject gameoverText = default;
     [SerializeField] private GameObject achievement = default;
+    [SerializeField] private AudioClip soundeffect_peti = default;
+    [SerializeField] private AudioClip soundeffect_pan = default;
 
     PlayerController pc;
     Score sc;
@@ -30,6 +32,7 @@ public class ButtonManager : MonoBehaviour
     bool invi = false;
     bool gandhi = false;
     public static bool gameover = false;
+
 
     void Awake()
     {
@@ -67,8 +70,10 @@ public class ButtonManager : MonoBehaviour
         if (key[num] != null && start && !cold) {
             if (pc.GetPressKey() == key[num]) {
                 if (num < numMax - 1) {
+                    GetComponent<AudioSource>().PlayOneShot(soundeffect_peti);
                     num++;
                 } else {
+                    GetComponent<AudioSource>().PlayOneShot(soundeffect_pan);
                     Next();
                 }
             } else if (Array.IndexOf(key_base, pc.GetPressKey()) >= 0) {
