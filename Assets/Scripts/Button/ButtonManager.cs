@@ -13,6 +13,9 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private AudioClip soundeffect_peti = default;
     [SerializeField] private AudioClip soundeffect_pan = default;
 
+    public Animator animator_usa;
+    public Animator animator_sen;
+
     PlayerController pc;
     Score sc;
     SendRecording sr;
@@ -47,6 +50,7 @@ public class ButtonManager : MonoBehaviour
 
     private void Update()
     {
+
         if (TargetObject != null) {
             return;
         }
@@ -71,9 +75,11 @@ public class ButtonManager : MonoBehaviour
             if (pc.GetPressKey() == key[num]) {
                 if (num < numMax - 1) {
                     GetComponent<AudioSource>().PlayOneShot(soundeffect_peti);
+                    Animation();
                     num++;
                 } else {
                     GetComponent<AudioSource>().PlayOneShot(soundeffect_pan);
+                    Animation();
                     Next();
                 }
             } else if (Array.IndexOf(key_base, pc.GetPressKey()) >= 0) {
@@ -269,5 +275,11 @@ public class ButtonManager : MonoBehaviour
     public float GetTimerMax()
     {
         return timerMax;
+    }
+
+    public void Animation()
+    {
+        animator_usa.SetTrigger("Trigger");
+        animator_sen.SetTrigger("Trigger");
     }
 }
