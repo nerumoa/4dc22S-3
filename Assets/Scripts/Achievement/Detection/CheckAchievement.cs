@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CheckAchievement : MonoBehaviour
 {
-    int startCount, gameoverCount, maxScore, allScore, successCount, damageCount, rare, sRare, _void, gandhi;
+    int startCount, gameoverCount, maxScore, allScore, successCount, damageCount;
+    int rare, sRare, credit, _void, gandhi;
     string[] achi = new string[25];
 
     void Awake()
@@ -29,6 +30,7 @@ public class CheckAchievement : MonoBehaviour
         damageCount = PlayerPrefs.GetInt("DAMAGE", 0);
         rare = PlayerPrefs.GetInt("RARE", 0);
         sRare = PlayerPrefs.GetInt("SRARE", 0);
+        credit = PlayerPrefs.GetInt("CREDIT", 0);
         _void = PlayerPrefs.GetInt("VOID", 0);
         gandhi = PlayerPrefs.GetInt("GANDHI", 0);
 
@@ -99,7 +101,7 @@ public class CheckAchievement : MonoBehaviour
             PlayerPrefs.SetString("ACHI20", "TRUE");
             achi[20] = PlayerPrefs.GetString("ACHI20");
 
-        } else if (damageCount >= 500000 && achi[21] == "FALSE") {
+        } else if (credit == 1 && achi[21] == "FALSE") {
             PlayerPrefs.SetString("ACHI21", "TRUE");
             achi[21] = PlayerPrefs.GetString("ACHI21");
         } else if (damageCount >= 500000 && achi[22] == "FALSE") {

@@ -9,6 +9,7 @@ public class SendRecording : MonoBehaviour
     SuccessAchievement sua;
     DamageAchievement da;
     MotiAchievement ma;
+    CreditAchievement ca;
     VoidAchievement va;
     GandhiAchievement gaa;
 
@@ -19,6 +20,7 @@ public class SendRecording : MonoBehaviour
         sua = GetComponent<SuccessAchievement>();
         da = GetComponent<DamageAchievement>();
         ma = GetComponent<MotiAchievement>();
+        ca = GetComponent<CreditAchievement>();
         va = GetComponent<VoidAchievement>();
         gaa = GetComponent<GandhiAchievement>();
     }
@@ -52,6 +54,11 @@ public class SendRecording : MonoBehaviour
     public void SendSRareRecord()
     {
         ma.SetSRare();
+    }
+
+    public void SendCreditRecord()
+    {
+        ca.SetCredit();
     }
 
     public void SendVoidRecord()
