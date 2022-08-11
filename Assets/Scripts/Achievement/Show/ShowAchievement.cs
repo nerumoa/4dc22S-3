@@ -12,23 +12,25 @@ public class ShowAchievement : MonoBehaviour
 
     ShowTextAchievement stac;
     ShowIconAchievement siac;
+    AudioSource audio;
     TextMeshProUGUI tmp;
     SpriteRenderer sp;
 
     bool cold = false;
-    string[] achi = new string[25];
+    string[] achi = new string[26];
 
     private void Awake()
     {
         stac = GetComponent<ShowTextAchievement>();
         siac = GetComponent<ShowIconAchievement>();
+        audio = GetComponent<AudioSource>();
         tmp = text2.GetComponent<TextMeshProUGUI>();
-        sp = icon.GetComponent<SpriteRenderer>();
+        sp = icon.GetComponent<SpriteRenderer>();        
     }
 
     void Update()
     {
-        for (int i = 1; i <= 24; i++) {
+        for (int i = 1; i <= 25; i++) {
             achi[i] = PlayerPrefs.GetString("ACHI" + i, "FALSE");
         }
 
@@ -88,6 +90,15 @@ public class ShowAchievement : MonoBehaviour
                 Achievement23();
             } else if (achi[24] == "TRUE") {
                 Achievement24();
+
+            } else if (achi[25] == "TRUE") {
+                Achievement25();
+            }
+        }
+
+        if (Input.GetKeyDown("k")) {
+            for (int i = 1; i <= 24; i++) {
+                PlayerPrefs.SetString("ACHI" + i, "FINISH");
             }
         }
     }
@@ -332,6 +343,15 @@ public class ShowAchievement : MonoBehaviour
         StartCoroutine("ShowAchieve");
     }
 
+    public void Achievement25()
+    {
+        StartCoroutine("ColdAchieve");
+        PlayerPrefs.SetString("ACHI25", "FINISH");
+        tmp.text = stac.GetText25();
+        sp.sprite = siac.GetIcon25();
+        icon.transform.localScale = new Vector2(0.25f, 0.25f);
+        StartCoroutine("ShowAchieve");
+    }
 
 
     IEnumerator ColdAchieve()
@@ -343,13 +363,22 @@ public class ShowAchievement : MonoBehaviour
 
     IEnumerator ShowAchieve()
     {
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 50; i++) {
             panel.transform.Translate(0f, -0.02f, 0f);
             icon.transform.Translate(0f, -0.02f, 0f);
             text.transform.Translate(0f, -2.0f, 0f);
             text2.transform.Translate(0f, -2.0f, 0f);
             yield return new WaitForSeconds(0.01f);
         }
+        audio.Play();
+        for (int i = 0; i < 50; i++) {
+            panel.transform.Translate(0f, -0.02f, 0f);
+            icon.transform.Translate(0f, -0.02f, 0f);
+            text.transform.Translate(0f, -2.0f, 0f);
+            text2.transform.Translate(0f, -2.0f, 0f);
+            yield return new WaitForSeconds(0.01f);
+        }
+
         yield return new WaitForSeconds(3f);
         for (int i = 0; i < 100; i++) {
             panel.transform.Translate(0f, 0.02f, 0f);

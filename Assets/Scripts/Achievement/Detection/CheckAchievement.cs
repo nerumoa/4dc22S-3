@@ -5,12 +5,12 @@ using UnityEngine;
 public class CheckAchievement : MonoBehaviour
 {
     int startCount, gameoverCount, maxScore, allScore, successCount, damageCount;
-    int rare, sRare, credit, _void, gandhi;
-    string[] achi = new string[25];
+    int rare, sRare, credit, music, _void, gandhi, all;
+    string[] achi = new string[26];
 
     void Awake()
     {
-        for (int i = 1; i <= 24; i++) {
+        for (int i = 1; i <= 25; i++) {
             achi[i] = PlayerPrefs.GetString("ACHI" + i, "FALSE");
         }
     }
@@ -31,8 +31,10 @@ public class CheckAchievement : MonoBehaviour
         rare = PlayerPrefs.GetInt("RARE", 0);
         sRare = PlayerPrefs.GetInt("SRARE", 0);
         credit = PlayerPrefs.GetInt("CREDIT", 0);
+        music = PlayerPrefs.GetInt("MUSIC", 0);
         _void = PlayerPrefs.GetInt("VOID", 0);
         gandhi = PlayerPrefs.GetInt("GANDHI", 0);
+        all = PlayerPrefs.GetInt("ALL", 0);
 
         if (successCount >= 10 && achi[1] == "FALSE") {
             PlayerPrefs.SetString("ACHI1", "TRUE");
@@ -104,7 +106,7 @@ public class CheckAchievement : MonoBehaviour
         } else if (credit == 1 && achi[21] == "FALSE") {
             PlayerPrefs.SetString("ACHI21", "TRUE");
             achi[21] = PlayerPrefs.GetString("ACHI21");
-        } else if (damageCount >= 500000 && achi[22] == "FALSE") {
+        } else if (music == 1 && achi[22] == "FALSE") {
             PlayerPrefs.SetString("ACHI22", "TRUE");
             achi[22] = PlayerPrefs.GetString("ACHI22");
         } else if (_void == 1 && achi[23] == "FALSE") {
@@ -113,6 +115,10 @@ public class CheckAchievement : MonoBehaviour
         } else if (gandhi == 1 && achi[24] == "FALSE") {
             PlayerPrefs.SetString("ACHI24", "TRUE");
             achi[24] = PlayerPrefs.GetString("ACHI24");
+
+        } else if (all == 1 && achi[25] == "FALSE") {
+            PlayerPrefs.SetString("ACHI25", "TRUE");
+            achi[25] = PlayerPrefs.GetString("ACHI25");
         }
     }
 }

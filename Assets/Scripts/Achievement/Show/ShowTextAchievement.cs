@@ -123,4 +123,9 @@ public class ShowTextAchievement : MonoBehaviour
     {
         return "ƒKƒ“ƒW[";
     }
+
+    public string GetText25()
+    {
+        return "Thank You\nFor Playing!!";
+    }
 }

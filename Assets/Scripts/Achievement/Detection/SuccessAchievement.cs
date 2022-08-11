@@ -16,11 +16,4 @@ public class SuccessAchievement : MonoBehaviour
         successCount++;
         PlayerPrefs.SetInt("SUCCESS", successCount);
     }
-
-    /* Debug
-    private void Update()
-    {
-        Debug.Log("Success:" + successCount);
-    }
-    */
 }

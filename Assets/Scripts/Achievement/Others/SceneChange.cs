@@ -29,4 +29,14 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("Achievement2Scene");
     }
+
+    public void Button3_4()
+    {
+        SceneManager.LoadScene("Achievement4Scene");
+    }
+
+    public void Button4_3()
+    {
+        SceneManager.LoadScene("Achievement3Scene");
+    }
 }

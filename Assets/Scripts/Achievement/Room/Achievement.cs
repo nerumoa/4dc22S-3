@@ -136,6 +136,10 @@ public class Achievement : MonoBehaviour
         if (achi[24] == "FINISH" && title.name == "Text24") {
             titleText.text = tta.GetTitleText24();
         }
+
+        if (title.name == "Text25") {
+            titleText.text = tta.GetTitleText25();
+        }
     }
 
     public void Achievement1()
@@ -376,5 +380,11 @@ public class Achievement : MonoBehaviour
             achiText.text = ota.GetOpenText24();
             sr.sprite = sia.GetIcon24();
         }
+    }
+
+    public void Achievement25()
+    {
+        achiText.text = ota.GetOpenText25();
+        sr.sprite = sia.GetIcon20();
     }
 }

@@ -12,6 +12,7 @@ public class SendRecording : MonoBehaviour
     CreditAchievement ca;
     VoidAchievement va;
     GandhiAchievement gaa;
+    AllAchievement aa;
 
     private void Awake()
     {
@@ -23,6 +24,7 @@ public class SendRecording : MonoBehaviour
         ca = GetComponent<CreditAchievement>();
         va = GetComponent<VoidAchievement>();
         gaa = GetComponent<GandhiAchievement>();
+        aa = GetComponent<AllAchievement>();
     }
 
     public void SendGameoverRecord()
@@ -69,5 +71,10 @@ public class SendRecording : MonoBehaviour
     public void SendGandhiRecord()
     {
         gaa.SetGandhi();
+    }
+
+    public void SendAllRecord()
+    {
+        aa.SetAll();
     }
 }

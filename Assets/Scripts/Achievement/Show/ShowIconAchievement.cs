@@ -36,6 +36,8 @@ public class ShowIconAchievement : MonoBehaviour
     [SerializeField] Sprite achi23Sprite = default;
     [SerializeField] Sprite achi24Sprite = default;
 
+    [SerializeField] Sprite achi25Sprite = default;
+
     public Sprite GetIcon1()
     {
         return achi1Sprite;
@@ -154,5 +156,10 @@ public class ShowIconAchievement : MonoBehaviour
     public Sprite GetIcon24()
     {
         return achi24Sprite;
+    }
+
+    public Sprite GetIcon25()
+    {
+        return achi25Sprite;
     }
 }

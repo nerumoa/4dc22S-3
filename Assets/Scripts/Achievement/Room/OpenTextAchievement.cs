@@ -26,12 +26,12 @@ public class OpenTextAchievement : MonoBehaviour
 
     public string GetOpenText5()
     {
-        return "餅つきを50回失敗した。\n\n全然まだまだノーダメージ";
+        return "餅つきを25回失敗した。\n\n全然まだまだノーダメージ";
     }
 
     public string GetOpenText6()
     {
-        return "餅つきを100回失敗した。\n\nまだいけますよね？";
+        return "餅つきを50回失敗した。\n\nまだいけますよね？";
     }
 
     public string GetOpenText7()
@@ -122,5 +122,10 @@ public class OpenTextAchievement : MonoBehaviour
     public string GetOpenText24()
     {
         return "一回も餅をつかずにゲームオーバーになった。\n\n不餅の誓い";
+    }
+
+    public string GetOpenText25()
+    {
+        return "全ての実績を取得した。\n\n\"時間\"";
     }
 }

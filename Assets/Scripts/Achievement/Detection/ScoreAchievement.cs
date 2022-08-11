@@ -25,12 +25,4 @@ public class ScoreAchievement : MonoBehaviour
         allScore += addScore;
         PlayerPrefs.SetInt("ALLSCORE", allScore);
     }
-
-    /* Debug
-    private void Update()
-    {
-        Debug.Log("MaxScore:" + maxScore);
-        Debug.Log("AllScore:" + allScore);
-    }
-    */
 }

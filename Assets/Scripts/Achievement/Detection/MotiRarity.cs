@@ -20,10 +20,8 @@ public class MotiRarity : MonoBehaviour
             find = true;
             if (GameObject.Find("kagamimoti_R")) {
                 sr.SendRareRecord();
-                Debug.Log("R");
             } else if (GameObject.Find("kagamimoti_SR")) {
                 sr.SendSRareRecord();
-                Debug.Log("SR");
             }
         }
     }

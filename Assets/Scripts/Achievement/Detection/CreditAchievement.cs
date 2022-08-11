@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class CreditAchievement : MonoBehaviour
 {
-    int credit;
-
-    void Awake()
-    {
-        credit = PlayerPrefs.GetInt("CREDIT", 0);
-    }
-
     public void SetCredit()
     {
-        credit = 1;
-        PlayerPrefs.SetInt("CREDIT", credit);
+        PlayerPrefs.SetInt("CREDIT", 1);
     }
 }
