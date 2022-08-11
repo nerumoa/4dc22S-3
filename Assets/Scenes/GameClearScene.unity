@@ -180,11 +180,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 876cf070e487c4b44b60294a54b21433, type: 3}
---- !u!1 &6645790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5183905511567113655, guid: 876cf070e487c4b44b60294a54b21433, type: 3}
-  m_PrefabInstance: {fileID: 6645789}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &177425452
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +261,7 @@ SpriteRenderer:
   m_Size: {x: 7, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &199931000
@@ -673,7 +668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b1faac8dd5b384fb462d99b2e5d61b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  achievement: {fileID: 6645790}
 --- !u!1 &707293126
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +875,7 @@ SpriteRenderer:
   m_Size: {x: 7, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &937496723
@@ -1180,7 +1174,7 @@ SpriteRenderer:
   m_Size: {x: 7, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1612270903
@@ -1723,15 +1717,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2971698, g: 0.96741945, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 5df3d454d2a866947b7384ae83af03e5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
