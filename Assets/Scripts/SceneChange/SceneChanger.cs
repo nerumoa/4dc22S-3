@@ -27,6 +27,11 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("GameClearScene");
     }
 
+    public void SCAchievement()
+    {
+        SceneManager.LoadScene("Achievement1Scene");
+    }
+
     public void ExitApp()
     {
 #if UNITY_EDITOR

@@ -4,123 +4,123 @@ using UnityEngine;
 
 public class NotOpenAchievement : MonoBehaviour
 {
-    public string GetText1()
+    public string GetNotOpen1()
     {
-        return "おかえり";
+        return "まだこの実績は\n開放されていません。\n\nまた会いましょう。";
     }
 
-    public string GetText2()
+    public string GetNotOpen2()
     {
-        return "待ってた";
+        return "まだこの実績は\n開放されていません。\n\nまた明日。";
     }
 
-    public string GetText3()
+    public string GetNotOpen3()
     {
-        return "今日も一日";
+        return "まだこの実績は\n開放されていません。\n\nさて、今日も―";
     }
 
-    public string GetText4()
+    public string GetNotOpen4()
     {
-        return "ゲームプレイ、\n感謝します";
+        return "まだこの実績は\n開放されていません。\n\n負けない心。";
     }
 
-    public string GetText5()
+    public string GetNotOpen5()
     {
-        return "お疲れ様です";
+        return "まだこの実績は\n開放されていません。\n\n諦めない心。";
     }
 
-    public string GetText6()
+    public string GetNotOpen6()
     {
-        return "まだやるの？";
+        return "まだこの実績は\n開放されていません。\n\n挫けない心。";
     }
 
-    public string GetText7()
+    public string GetNotOpen7()
     {
-        return "すばらしい！";
+        return "まだこの実績は\n開放されていません。\n\n山の登り始め。";
     }
 
-    public string GetText8()
+    public string GetNotOpen8()
     {
-        return "とても\nすばらしい！";
+        return "まだこの実績は\n開放されていません。\n\nさらなる高みへ。";
     }
 
-    public string GetText9()
+    public string GetNotOpen9()
     {
-        return "すばらしい・\nオブザイヤー";
+        return "まだこの実績は\n開放されていません。\n\n頂きは果てしなく遠い。";
     }
 
-    public string GetText10()
+    public string GetNotOpen10()
     {
-        return "よくやった！";
+        return "まだこの実績は\n開放されていません。\n\n小さな積み重ね。";
     }
 
-    public string GetText11()
+    public string GetNotOpen11()
     {
-        return "餅も積もれば\n山となる";
+        return "まだこの実績は\n開放されていません。\n\n大きな積み重ね。";
     }
 
-    public string GetText12()
+    public string GetNotOpen12()
     {
-        return "千里の餅も、\nひと足宛はこぶなり";
+        return "まだこの実績は\n開放されていません。\n\n継続は力なり。";
     }
 
-    public string GetText13()
+    public string GetNotOpen13()
     {
-        return "餅を搗きし者";
+        return "まだこの実績は\n開放されていません。\n\n初めての挑戦は\nとても輝かしい。";
     }
 
-    public string GetText14()
+    public string GetNotOpen14()
     {
-        return "お餅大好き";
+        return "まだこの実績は\n開放されていません。\n\n一人前への挑戦。";
     }
 
-    public string GetText15()
+    public string GetNotOpen15()
     {
-        return "ウルトラ餅ニスト";
+        return "まだこの実績は\n開放されていません。\n\n職人の手さばき。";
     }
 
-    public string GetText16()
+    public string GetNotOpen16()
     {
-        return "Welcome Hell";
+        return "まだこの実績は\n開放されていません。\n\n誰にだって失敗はある。";    //わよん。
     }
 
-    public string GetText17()
+    public string GetNotOpen17()
     {
-        return "餅搗きに\n失敗は搗きもの";
+        return "まだこの実績は\n開放されていません。\n\nその痛みは、\n己を強くする。";
     }
 
-    public string GetText18()
+    public string GetNotOpen18()
     {
-        return "あきらめるな、\nまだ搗ける";
+        return "まだこの実績は\n開放されていません。\n\n痛い。";
     }
 
-    public string GetText19()
+    public string GetNotOpen19()
     {
-        return "ラッキーマン";
+        return "まだこの実績は\n開放されていません。\n\n中吉。";
     }
 
-    public string GetText20()
+    public string GetNotOpen20()
     {
-        return "重課金者";
+        return "まだこの実績は\n開放されていません。\n\nあなたに幸運を。";
     }
 
-    public string GetText21()
+    public string GetNotOpen21()
     {
-        return "出席確認";
+        return "まだこの実績は\n開放されていません。\n\nえっと、\n制作者は誰だっけ？";
     }
 
-    public string GetText22()
+    public string GetNotOpen22()
     {
-        return "兎の耳に神曲";
+        return "まだこの実績は\n開放されていません。\n\n今すぐ\nミュージックルームに直行だ！";
     }
 
-    public string GetText23()
+    public string GetNotOpen23()
     {
-        return "虚無";
+        return "まだこの実績は\n開放されていません。\n\n時間は無駄にする\nものじゃありませんよ？";
     }
 
-    public string GetText24()
+    public string GetNotOpen24()
     {
-        return "ガンジー";
+        return "まだこの実績は\n開放されていません。\n\nもしかして\n餅は嫌いですか？";
     }
 }
