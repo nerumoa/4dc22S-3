@@ -115,10 +115,10 @@ public class CheckAchievement : MonoBehaviour
         } else if (damageCount >= 5 && achi16 == "FALSE") {
             PlayerPrefs.SetString("ACHI16", "TRUE");
             achi16 = PlayerPrefs.GetString("ACHI16");
-        } else if (damageCount >= 50 && achi17 == "FALSE") {
+        } else if (damageCount >= 25 && achi17 == "FALSE") {
             PlayerPrefs.SetString("ACHI17", "TRUE");
             achi17 = PlayerPrefs.GetString("ACHI17");
-        } else if (damageCount >= 100 && achi18 == "FALSE") {
+        } else if (damageCount >= 50 && achi18 == "FALSE") {
             PlayerPrefs.SetString("ACHI18", "TRUE");
             achi18 = PlayerPrefs.GetString("ACHI18");
 
