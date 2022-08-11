@@ -96,31 +96,31 @@ public class OpenTextAchievement : MonoBehaviour
 
     public string GetOpenText19()
     {
-        return "レア鏡餅を発見した。";
+        return "レア鏡餅を発見した。\n\nテンション上がりまくり";
     }
 
     public string GetOpenText20()
     {
-        return "スーパーレア鏡餅を発見した。";
+        return "スーパーレア鏡餅を発見した。\n\n今月のセルラン1位";
     }
 
     public string GetOpenText21()
     {
-        return "クレジットを見に行った。";
+        return "クレジットを見に行った。\n\nありがとうございました。";
     }
 
     public string GetOpenText22()
     {
-        return "ミュージックルームですべての曲を聴いた。";
+        return "ミュージックルームですべての曲を聴いた。\n\n神曲ぞろい";
     }
 
     public string GetOpenText23()
     {
-        return "タイトル画面で5分放置した。";
+        return "タイトル画面で5分放置した。\n\n時間の無駄でぇす";
     }
 
     public string GetOpenText24()
     {
-        return "一回も餅をつかずにゲームオーバーになった。";
+        return "一回も餅をつかずにゲームオーバーになった。\n\n不餅の誓い";
     }
 }
