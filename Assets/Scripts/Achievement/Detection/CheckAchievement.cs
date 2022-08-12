@@ -69,10 +69,10 @@ public class CheckAchievement : MonoBehaviour
         } else if (maxScore >= 10000 && achi[10] == "FALSE") {
             PlayerPrefs.SetString("ACHI10", "TRUE");
             achi[10] = PlayerPrefs.GetString("ACHI10");
-        } else if (maxScore >= 50000 && achi[11] == "FALSE") {
+        } else if (maxScore >= 40000 && achi[11] == "FALSE") {
             PlayerPrefs.SetString("ACHI11", "TRUE");
             achi[11] = PlayerPrefs.GetString("ACHI11");
-        } else if (maxScore >= 100000 && achi[12] == "FALSE") {
+        } else if (maxScore >= 70000 && achi[12] == "FALSE") {
             PlayerPrefs.SetString("ACHI12", "TRUE");
             achi[12] = PlayerPrefs.GetString("ACHI12");
 

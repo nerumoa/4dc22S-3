@@ -56,12 +56,12 @@ public class OpenTextAchievement : MonoBehaviour
 
     public string GetOpenText11()
     {
-        return "一回のゲームのスコア量が5万を超えた。\n\nひょっとしてもう飽きてない？";
+        return "一回のゲームのスコア量が4万を超えた。\n\nひょっとしてもう飽きてない？";
     }
 
     public string GetOpenText12()
     {
-        return "一回のゲームのスコア量が10万を超えた。\n\n至高の領域に近い。お前も餅にならないか？";
+        return "一回のゲームのスコア量が7万を超えた。\n\n至高の領域に近い。お前も餅にならないか？";
     }
 
     public string GetOpenText13()
@@ -126,6 +126,6 @@ public class OpenTextAchievement : MonoBehaviour
 
     public string GetOpenText25()
     {
-        return "全ての実績を取得した。\n\n\"時間\"";
+        return "全ての実績を取得した。\n\nここまで遊んでいただき\nありがとうございました。\"時間\"は溶けましたか？";
     }
 }
