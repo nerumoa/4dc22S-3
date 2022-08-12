@@ -6,12 +6,12 @@ public class OpenTextAchievement : MonoBehaviour
 {
     public string GetOpenText1()
     {
-        return "餅つきを10回成功させた。\n\nもう初心者とは言わせない。";
+        return "餅つきを10回成功させた。\n\nもう初心者とは言わせない";
     }
 
     public string GetOpenText2()
     {
-        return "餅つきを100回成功させた。\n\nのどに詰まらせないように。";
+        return "餅つきを100回成功させた。\n\nのどに詰まらせないように";
     }
 
     public string GetOpenText3()
@@ -36,47 +36,47 @@ public class OpenTextAchievement : MonoBehaviour
 
     public string GetOpenText7()
     {
-        return "ゲームオーバー回数が1回になった。\n\nサンキューベリー餅";
+        return "ゲームオーバー回数が\n1回になった。\n\nサンキューベリー餅";
     }
 
     public string GetOpenText8()
     {
-        return "ゲームオーバー回数が5回になった。\n\nもうちょっとやっていきなよ";
+        return "ゲームオーバー回数が\n5回になった。\n\nもうちょっとやっていきなよ";
     }
 
     public string GetOpenText9()
     {
-        return "ゲームオーバー回数が10回になった。\n\nやっぱりそろそろやめにしないか？";
+        return "ゲームオーバー回数が\n10回になった。\n\nやっぱりそろそろ\nやめにしないか？";
     }
 
     public string GetOpenText10()
     {
-        return "一回のゲームのスコア量が1万を超えた。\n\nさぁてみなさ～ん、餅つきの時間でぇす";
+        return "一回のゲームのスコア量が\n1万を超えた。\n\nさぁてみなさ～ん、\n餅つきの時間でぇす";
     }
 
     public string GetOpenText11()
     {
-        return "一回のゲームのスコア量が4万を超えた。\n\nひょっとしてもう飽きてない？";
+        return "一回のゲームのスコア量が\n4万を超えた。\n\nひょっとしてもう飽きてない？";
     }
 
     public string GetOpenText12()
     {
-        return "一回のゲームのスコア量が7万を超えた。\n\n至高の領域に近い。お前も餅にならないか？";
+        return "一回のゲームのスコア量が\n7万を超えた。\n\n至高の領域に近い。\nお前も餅にならないか？";
     }
 
     public string GetOpenText13()
     {
-        return "今までの合計スコア量が20万を超えた。\n\nまだまだ序の口ですよ";
+        return "今までの合計スコア量が\n20万を超えた。\n\nまだまだ序の口ですよ";
     }
 
     public string GetOpenText14()
     {
-        return "今までの合計スコア量が30万を超えた。\n\n腹に溜まるからあんまり食えない";
+        return "今までの合計スコア量が\n30万を超えた。\n\n腹に溜まるから\nあんまり食えない";
     }
 
     public string GetOpenText15()
     {
-        return "今までの合計スコア量が50万を超えた。\n\nさらに向こうへ。Plus Ultra";
+        return "今までの合計スコア量が\n50万を超えた。\n\nさらに向こうへ。Plus Ultra";
     }
 
     public string GetOpenText16()
@@ -111,7 +111,7 @@ public class OpenTextAchievement : MonoBehaviour
 
     public string GetOpenText22()
     {
-        return "ミュージックルームですべての曲を聴いた。\n\n神曲ぞろい";
+        return "ミュージックルームで\nすべての曲を聴いた。\n\n神曲ぞろい";
     }
 
     public string GetOpenText23()
@@ -121,7 +121,7 @@ public class OpenTextAchievement : MonoBehaviour
 
     public string GetOpenText24()
     {
-        return "一回も餅をつかずにゲームオーバーになった。\n\n不餅の誓い";
+        return "一回も餅をつかずに\nゲームオーバーになった。\n\n不餅の誓い";
     }
 
     public string GetOpenText25()
