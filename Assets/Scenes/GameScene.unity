@@ -279,6 +279,7 @@ MonoBehaviour:
   achievement: {fileID: 1392599949}
   soundeffect_peti: {fileID: 8300000, guid: f5aead062c864c54cbb6aad51f4b5468, type: 3}
   soundeffect_pan: {fileID: 8300000, guid: ff6f9a0905da9fc4991147678457977f, type: 3}
+  soundeffect_damage: {fileID: 8300000, guid: 4b2bd8b731f51d1448b80d3a309c59d6, type: 3}
   animator_usa: {fileID: 1040475334}
   animator_sen: {fileID: 1847958765}
 --- !u!4 &4815357
@@ -1024,8 +1025,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278848128
+  m_fontColor: {r: 0.5, g: 0.040094346, b: 0.040094346, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2227,8 +2228,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279763079
+  m_fontColor: {r: 0.5283019, g: 0, b: 0.09303284, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

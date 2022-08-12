@@ -12,6 +12,7 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private GameObject achievement = default;
     [SerializeField] private AudioClip soundeffect_peti = default;
     [SerializeField] private AudioClip soundeffect_pan = default;
+    [SerializeField] private AudioClip soundeffect_damage = default;
 
     public Animator animator_usa;
     public Animator animator_sen;
@@ -19,6 +20,7 @@ public class ButtonManager : MonoBehaviour
     PlayerController pc;
     Score sc;
     SendRecording sr;
+    AudioSource audio;
     GameObject[] B = new GameObject[6];
 
     string[] key_base = new string[] { "W", "A", "S", "D", "UpArrow", "LeftArrow", "DownArrow", "RightArrow" };
@@ -42,6 +44,7 @@ public class ButtonManager : MonoBehaviour
         pc = GetComponent<PlayerController>();
         sr = achievement.GetComponent<SendRecording>();
         sc = scoreText.GetComponent<Score>();
+        audio = GetComponent<AudioSource>();
         sc.ResetScore();
         for (int i = 0; i < 6; i++) {
             B[i] = transform.GetChild(i).gameObject;
@@ -74,11 +77,11 @@ public class ButtonManager : MonoBehaviour
         if (key[num] != null && start && !cold) {
             if (pc.GetPressKey() == key[num]) {
                 if (num < numMax - 1) {
-                    GetComponent<AudioSource>().PlayOneShot(soundeffect_peti);
+                    audio.PlayOneShot(soundeffect_peti);
                     Animation();
                     num++;
                 } else {
-                    GetComponent<AudioSource>().PlayOneShot(soundeffect_pan);
+                    audio.PlayOneShot(soundeffect_pan);
                     Animation();
                     Next();
                 }
@@ -119,6 +122,7 @@ public class ButtonManager : MonoBehaviour
     {
         if (!invi) {
             hp--;
+            audio.PlayOneShot(soundeffect_damage);
             sr.SendDamageRecord();
             StartCoroutine("Invincible");
         }
