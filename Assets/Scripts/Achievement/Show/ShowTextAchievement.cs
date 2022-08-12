@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,17 +6,17 @@ public class ShowTextAchievement : MonoBehaviour
 {
     public string GetText1()
     {
-        return "–İ‚ğ‘‚«‚µÒ";
+        return "é¤…ã‚’æ—ãã—è€…";
     }
 
     public string GetText2()
     {
-        return "‚¨–İ‘åD‚«";
+        return "ãŠé¤…å¤§å¥½ã";
     }
 
     public string GetText3()
     {
-        return "ƒEƒ‹ƒgƒ‰–İƒjƒXƒg";
+        return "ã‚¦ãƒ«ãƒˆãƒ©é¤…ãƒ‹ã‚¹ãƒˆ";
     }
 
     public string GetText4()
@@ -26,102 +26,102 @@ public class ShowTextAchievement : MonoBehaviour
 
     public string GetText5()
     {
-        return "–İ‘‚«‚É\n¸”s‚Í‘‚«‚à‚Ì";
+        return "é¤…æ—ãã«\nå¤±æ•—ã¯æ—ãã‚‚ã®";
     }
 
     public string GetText6()
     {
-        return "‚ ‚«‚ç‚ß‚é‚ÈA\n‚Ü‚¾‘‚¯‚é";
+        return "ã‚ãã‚‰ã‚ã‚‹ãªã€\nã¾ã æ—ã‘ã‚‹";
     }
 
     public string GetText7()
     {
-        return "ƒQ[ƒ€ƒvƒŒƒCA\nŠ´Ó‚µ‚Ü‚·";
+        return "ã‚²ãƒ¼ãƒ ãƒ—ãƒ¬ã‚¤ã€\næ„Ÿè¬ã—ã¾ã™";
     }
 
     public string GetText8()
     {
-        return "‚¨”æ‚ê—l‚Å‚·";
+        return "ãŠç–²ã‚Œæ§˜ã§ã™";
     }
 
     public string GetText9()
     {
-        return "‚Ü‚¾‚â‚é‚ÌH";
+        return "ã¾ã ã‚„ã‚‹ã®ï¼Ÿ";
     }
 
     public string GetText10()
     {
-        return "‚·‚Î‚ç‚µ‚¢I";
+        return "ã™ã°ã‚‰ã—ã„ï¼";
     }
 
     public string GetText11()
     {
-        return "‚Æ‚Ä‚à\n‚·‚Î‚ç‚µ‚¢I";
+        return "ã¨ã¦ã‚‚\nã™ã°ã‚‰ã—ã„ï¼";
     }
 
     public string GetText12()
     {
-        return "‚·‚Î‚ç‚µ‚¢E\nƒIƒuƒUƒCƒ„[";
+        return "ã™ã°ã‚‰ã—ã„ãƒ»\nã‚ªãƒ–ã‚¶ã‚¤ãƒ¤ãƒ¼";
     }
 
     public string GetText13()
     {
-        return "‚æ‚­‚â‚Á‚½I";
+        return "ã‚ˆãã‚„ã£ãŸï¼";
     }
 
     public string GetText14()
     {
-        return "–İ‚àÏ‚à‚ê‚Î\nR‚Æ‚È‚é";
+        return "é¤…ã‚‚ç©ã‚‚ã‚Œã°\nå±±ã¨ãªã‚‹";
     }
 
     public string GetText15()
     {
-        return "ç—¢‚Ì–İ‚àA\n‚Ğ‚Æ‘«ˆ¶‚Í‚±‚Ô‚È‚è";
+        return "åƒé‡Œã®é¤…ã‚‚ã€\nã²ã¨è¶³å®›ã¯ã“ã¶ãªã‚Š";
     }
 
     public string GetText16()
     {
-        return "‚¨‚©‚¦‚è";
+        return "ãŠã‹ãˆã‚Š";
     }
 
     public string GetText17()
     {
-        return "‘Ò‚Á‚Ä‚½";
+        return "å¾…ã£ã¦ãŸ";
     }
 
     public string GetText18()
     {
-        return "¡“ú‚àˆê“ú";
+        return "ä»Šæ—¥ã‚‚ä¸€æ—¥";
     }
 
     public string GetText19()
     {
-        return "ƒ‰ƒbƒL[ƒ}ƒ“";
+        return "ãƒ©ãƒƒã‚­ãƒ¼ãƒãƒ³";
     }
 
     public string GetText20()
     {
-        return "d‰Û‹àÒ";
+        return "é‡èª²é‡‘è€…";
     }
 
     public string GetText21()
     {
-        return "oÈŠm”F";
+        return "å‡ºå¸­ç¢ºèª";
     }
 
     public string GetText22()
     {
-        return "“e‚Ì¨‚É_‹È";
+        return "å…ã®è€³ã«ç¥æ›²";
     }
 
     public string GetText23()
     {
-        return "‹•–³";
+        return "è™šç„¡";
     }
 
     public string GetText24()
     {
-        return "ƒKƒ“ƒW[";
+        return "ã‚¬ãƒ³ã‚¸ãƒ¼";
     }
 
     public string GetText25()
