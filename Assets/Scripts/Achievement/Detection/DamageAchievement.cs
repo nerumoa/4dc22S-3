@@ -16,11 +16,4 @@ public class DamageAchievement : MonoBehaviour
         damageCount++;
         PlayerPrefs.SetInt("DAMAGE", damageCount);
     }
-
-    /* Debug
-    private void Update()
-    {
-        Debug.Log("Damage:" + damageCount);
-    }
-    */
 }

@@ -95,12 +95,6 @@ public class ShowAchievement : MonoBehaviour
                 Achievement25();
             }
         }
-
-        if (Input.GetKeyDown("k")) {
-            for (int i = 1; i <= 24; i++) {
-                PlayerPrefs.SetString("ACHI" + i, "FINISH");
-            }
-        }
     }
 
     public void Achievement1()

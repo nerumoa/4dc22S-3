@@ -38,16 +38,6 @@ public class Achievement : MonoBehaviour
         GetTitleText();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown("i")) {
-            for (int i = 1; i <= 24; i++) {
-                achi[i] = "FINISH";
-            }
-            GetTitleText();
-        }
-    }
-
     private void GetAchiRecord()
     {
         for (int i = 1; i <= 24; i++) {

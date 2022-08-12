@@ -16,11 +16,4 @@ public class GameoverAchievement : MonoBehaviour
         gameoverCount++;
         PlayerPrefs.SetInt("GAMEOVER", gameoverCount);
     }
-
-    /* Debug
-    private void Update()
-    {
-        Debug.Log("Gameover:" + gameoverCount);
-    }
-    */
 }
