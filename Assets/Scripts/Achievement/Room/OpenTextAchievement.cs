@@ -126,6 +126,6 @@ public class OpenTextAchievement : MonoBehaviour
 
     public string GetOpenText25()
     {
-        return "全ての実績を取得した。\n\nここまで遊んでいただき\nありがとうございました。\"時間\"は溶けましたか？";
+        return "全ての実績を取得した。\n\nここまで遊んでいただき\nありがとうございました。\n\"時間\"は溶けましたか？";
     }
 }
