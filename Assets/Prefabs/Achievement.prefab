@@ -423,8 +423,8 @@ MonoBehaviour:
   achi8Sprite: {fileID: 21300000, guid: 0a65f6a396b4f0246ab38c612edd700b, type: 3}
   achi9Sprite: {fileID: 21300000, guid: dfe17f5b037e1ac479dad1aa7364e31c, type: 3}
   achi10Sprite: {fileID: 21300000, guid: 86a10685f2a3ea743a41a01d4ce1e53d, type: 3}
-  achi11Sprite: {fileID: 21300000, guid: 6cbb22b03c9338a418e7d46afbd69634, type: 3}
-  achi12Sprite: {fileID: 21300000, guid: 9dac18cf39df3774899f8f5ea44eff53, type: 3}
+  achi11Sprite: {fileID: 21300000, guid: 97d504ae53877bb4d8d11ca2a37982ba, type: 3}
+  achi12Sprite: {fileID: 21300000, guid: 524f7d2dd4294d9438df3f2a1e28331b, type: 3}
   achi13Sprite: {fileID: 21300000, guid: 950fc774ee86ddf4183ea48279bfe2b9, type: 3}
   achi14Sprite: {fileID: 21300000, guid: 648bd165c91660f4b9431f05b5ebe902, type: 3}
   achi15Sprite: {fileID: 21300000, guid: 9fe9804b6a66c154b95406317edbc6ef, type: 3}

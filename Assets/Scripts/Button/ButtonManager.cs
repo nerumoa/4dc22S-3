@@ -175,47 +175,47 @@ public class ButtonManager : MonoBehaviour
     {
         if (totalTimer >= 240f) {
             timerMax = 2.5f;
-            addScore += 100;
+            addScore = 1000;
         } else if (totalTimer >= 220f) {
             timerMax = 2.66f;
-            addScore += 50;
+            addScore = 900;
         } else if (totalTimer >= 200f) {
             timerMax = 2.83f;
-            addScore += 50;
+            addScore = 850;
         } else if (totalTimer >= 180f) {
             timerMax = 3.0f;
-            addScore += 50;
+            addScore = 800;
         } else if (totalTimer >= 160f) {
             timerMax = 3.2f;
-            addScore += 50;
+            addScore = 750;
         } else if (totalTimer >= 140f) {
             timerMax = 3.4f;
-            addScore += 50;
+            addScore = 700;
         } else if (totalTimer >= 120f) {
             timerMax = 3.6f;
-            addScore += 50;
+            addScore = 650;
         } else if (totalTimer >= 100f) {
             timerMax = 3.8f;
-            addScore += 50;
+            addScore = 600;
         } else if (totalTimer >= 80f) {
             timerMax = 4.0f;
-            addScore += 50;
+            addScore = 550;
         } else if (totalTimer >= 60f) {
             Fifth();
             timerMax = 5.0f;
-            addScore += 100;
+            addScore = 500;
         } else if (totalTimer >= 50f) {
             timerMax = 6.0f;
         } else if (totalTimer >= 40f) {
             Fourth();
             timerMax = 7.0f;
-            addScore += 100;
+            addScore = 400;
         } else if (totalTimer >= 30f) {
             timerMax = 8.0f;
         } else if (totalTimer >= 20f) {
             Third();
             timerMax = 9.0f;
-            addScore += 100;
+            addScore = 300;
         }
     }
 
